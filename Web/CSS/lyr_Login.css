@@ -1,0 +1,292 @@
+﻿/*公共样式*/
+* {
+      margin:0;padding:0; /*设置外边距和内边距为零，有需要自己另外加*/
+}
+body {
+    color:#333; /*设置整体字体颜色一般网页用：333、666、999*/
+    font:12px "Microsfot YaHei";/*网页字体一般用12号字体*/
+}
+a {
+    color:#333;/*设置字体颜色*/
+    text-decoration:none; /*取消 a 元素自带下划线*/
+}
+    a:hover {
+        color: #E4393C;/*设置字体颜色*/
+        text-decoration: underline;/*恢复 a 元素自带下划线*/
+        cursor:pointer;/*设置鼠标手势*/
+}
+ul {
+    list-style:none;/*取消 ul 列表自带的样式*/
+}
+i, b {
+    /* i,b 是行内元素 好处是：它可以跟其它元素在一行显示*/
+    display:inline-block;/*插入背景图要高度和宽度所以设置为行内块*/
+    vertical-align:middle;/*左边图标跟右边文本一起在一条水平线上*/
+}
+i {
+    background:url();/*提前设置照片，用的时候根据所需的图标位置挪动*/
+}
+input, button {
+    outline:none;/*去除元素轮廓*/
+}
+.container {
+    width: 1349px;/*设置网页宽度*/
+    margin: auto;/*让元素块居中*/
+}
+.clearFloat:after {/*清除子元素浮动对父元素的影响*/
+    content:"";/*内容为空*/
+    display:block;/*让它显示为块*/
+    clear:both;/**/
+}
+.lf {
+    float:left;/*左边浮动*/
+}
+.rf {
+    float:right;/*右边浮动*/
+}
+/*头部样式*/
+.header_lt {
+   margin-bottom:8px;
+}
+    .header_lt > i {
+        width: 95px;
+        height: 92px;
+        background: url('../Images/用户登录/MiLogo.png') no-repeat;
+        background-position: -20px 0px;
+        background-size: 130px;
+        margin-left: 120px;
+    }
+.header_lt > b {
+    font-size:26px;
+    color:#333333;
+    margin-top:25px;
+    margin-left:12px;
+}
+.header_lt > .miUrl {
+    margin-top:33px;
+    font-size:18px;
+}
+/*内容样式*/
+.content_middle {
+    height: 592px;
+    background: url('../Images/用户登录/mix2.jpg')no-repeat;
+    background-position: 0px -15px;
+    background-size: 100% 592px;
+}
+ /*==================================内容顶部部分=========================*/
+.content_middle >.content_Login{
+    height: 525px;
+    width:410px;
+    position:absolute;
+    margin-top:30px;
+    margin-left:830px;
+    background-color:#FFFFFF;
+}
+.content_Login>.content_top{
+   font-size:24px;
+   margin-top:30px;
+   margin-left:65px;
+}
+.content_Login>.content_top>ul>li:hover{
+  color:#F56600;
+  cursor:pointer;
+}
+.content_Login>.content_top>ul>li{
+ float:left;
+}
+ .content_Login > .content_top > ul > li:first-child{
+        color:#F56600;
+ }
+ .content_Login > .content_top > ul > li:nth-child(2n)>label {
+    border:1px solid;
+    border-color:#E0E0E0;
+    margin-left: 40px;
+    margin-right: 40px;
+ }
+ /*==================================内容中间部分=========================*/
+   .content_zhongbu {
+    margin-top:70px;
+}
+      .content_zhongbu >.content_zhongbu_user,.content_zhongbu_pwd{
+    margin-left:20px;
+}
+    .content_zhongbu>div:first-child {    
+        margin-top:100px;
+    }
+    .content_zhongbu > div > .login_user {
+        width: 30px;
+        height: 30px;
+        background: url('../Images/用户登录/Login_User.ico') no-repeat;
+        background-size: 31px;
+        margin-top: -6px;
+    }
+    .content_zhongbu > div > .login_pwd {
+        width: 30px;
+        height: 35px;
+        background: url('../Images/用户登录/Login_Pwd.ico') no-repeat;
+        background-size: 30px 35px;
+    }
+    .content_zhongbu > #login_Msg { /*登陆提示*/
+        color:red;
+        display:none;
+        margin:18px 0px 0px 80px;
+    }
+        .content_zhongbu > #login_Msg > i { /*登陆提示图标*/
+            width: 18px;
+            height: 18px;
+            background: url('../Images/用户登录/mssage.png') no-repeat;
+            background-size: 18px 18px;
+        }
+    .content_zhongbu > div > input, button {
+        color: #333;
+        font-size: 15px;
+        width: 280px;
+        height: 50px;
+        margin-left: 20px;
+        padding-left: 12px;
+        padding-right: 12px;
+        border-radius: 20px;
+        border: 1px solid #BBBBBB;
+    }
+/*立即注册，忘记密码*/
+.regist_and_pwd > ul {
+    margin-top:8px;
+     margin-left:220px;
+}
+.regist_and_pwd > ul > li {
+    float:left;
+    font-size:14px;
+}
+    .regist_and_pwd > ul > li > a {
+          color:#999;
+    }
+        .regist_and_pwd > ul > li > a:hover {
+          color:red;
+    }
+.regist_and_pwd > ul > li:nth-child(2n) {
+   margin-left:5px;
+   margin-right:5px;
+}
+.regist_and_pwd > ul > li>a:hover {
+    text-decoration:none;
+    cursor:pointer;
+}
+.content_zhongbu>div>input {
+   margin-left:15px;
+   /*border-style:dotted;*/
+}
+.content_zhongbu>div:first-child>#txtUserName {
+    margin-bottom:10px;     
+}
+.content_zhongbu > #btnLogin {
+    font-size: 15px;
+    color: #fff;
+    border: 0px;
+    width: 306px;
+    margin-top: 20px;
+    margin-left: 66px;
+    background-color: #F56600;
+    cursor: pointer;
+}
+/*底部-其他方式登录*/
+.content_footer_middle {
+    margin:90px 0px 0px 0px ;
+    font-size:14px;
+    color:#BBBBBB;
+}
+.content_footer_middle>span>input:first-child {
+   margin-left:28px;
+}
+.content_footer_middle>span>input {
+   border:0px;
+   background-color:#E0E0E0;
+   width:135px;
+   height:1px;
+}
+.content_footer_logo >a>i {
+  margin-top:15px; 
+  margin-left:18px;margin-right:18px;
+}
+.content_footer_logo > a > .content_footer_qq {
+    width: 30px;
+    height: 30px;
+    margin-left: 86px;
+    background: url('../Images/用户登录/qq_login.png') no-repeat;
+    background-size: 30px;
+}
+.content_footer_logo > a .content_footer_weibo {
+    width: 30px;
+    height: 30px;
+    background: url('../Images/用户登录/weibo_login.png') no-repeat;
+    background-size: 30px;
+}
+.content_footer_logo > a > .content_footer_zhifubao {
+    width: 30px;
+    height: 30px;
+    background: url('../Images/用户登录/zhifubao_login.png') no-repeat;
+    background-size: 30px;
+}
+.content_footer_logo > a > .content_footer_weixin {
+    width: 30px;
+    height: 30px;
+    background: url('../Images/用户登录/weixin_login.png') no-repeat;
+    background-size: 30px;
+}
+/*鼠标经过logo*/
+.content_footer_logo > a > .content_footer_qq:hover {
+    background: url('../Images/用户登录/qq_hover.png') no-repeat;
+    background-size: 30px;
+}
+.content_footer_logo > a > .content_footer_weibo:hover {
+    background: url('../Images/用户登录/weibo_hover.png') no-repeat;
+    background-size: 30px;
+}
+.content_footer_logo > a > .content_footer_zhifubao:hover {
+    background: url('../Images/用户登录/zhifubao_hover.png') no-repeat;
+    background-size: 30px;
+}
+.content_footer_logo > a > .content_footer_weixin:hover {
+    background: url('../Images/用户登录/weixin_hover.png') no-repeat;
+    background-size: 30px;
+}
+/*尾部样式*/
+.footer > .container {
+    margin-top:20px;
+}
+.footer_list {
+    margin-left:40%;
+}
+.footer_list>li {
+    font-size:14px;
+    float:left;
+    color:#757575;
+}
+.footer_list>li:nth-child(2n) {
+    font-size:10px;
+    margin-left:10px;
+    margin-right:10px;
+}
+.footer_list>li>a:hover{
+ text-decoration:none;
+ cursor:pointer;
+}
+.footer > .container>b{
+   float:left;
+   font-size:15px;
+   margin-top:10px;
+   margin-left:350px;
+   margin-bottom:30px;
+}
+    .footer > .container > b > a > .police_logo {
+        width: 20px;
+        height: 20px;
+        background: url('../Images/用户登录/police_logo.png') no-repeat;
+        background-size: 20px;
+        margin-top: -8px;
+    }
+  .footer > .container > b >a:hover{
+        cursor:pointer;
+}
+
+
+

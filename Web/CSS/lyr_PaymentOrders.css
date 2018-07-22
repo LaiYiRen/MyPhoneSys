@@ -1,0 +1,440 @@
+﻿/*公共样式*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 12px;
+    font-family: "Microsoft YaHei";
+    min-width: 1226px;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+i {
+    cursor: pointer;
+}
+
+input, button {
+    outline: none;
+}
+
+.container {
+    width: 1226px;
+    margin: auto;
+}
+/*头部*/
+.header .container {
+    height: 80px;
+    overflow: hidden;
+    zoom: 1;
+}
+
+.header .h_hr {
+    height: 1px;
+    border-bottom: 2px solid #ff6700;
+}
+
+.header .container .h_c_left {
+    float: left;
+    width: 50%;
+    height: 80px;
+    line-height: 80px;
+}
+
+.header .container .h_c_right {
+    float: right;
+    width: 48%;
+    height: 80px;
+    line-height: 80px;
+}
+
+.header .container .h_c_left .logo {
+    margin-top: 16px;
+    margin-right: 46px;
+    float: left;
+    display: block;
+    font-size: 30px;
+    color: #fff;
+    text-align: center;
+    width: 48px;
+    height: 49px;
+    line-height: 50px;
+    background-color: #ff6700;
+}
+
+    .header .container .h_c_left .logo .iconfont {
+        font-size: 32px;
+        color: #fff;
+        -moz-user-select: none;
+        -webkit-user-select: none;
+    }
+
+.header .container .h_c_left .meShopCart {
+    font-size: 28px;
+    color: #333;
+}
+
+.header .container .h_c_left .message {
+    margin-left: 10px;
+    font-size: 12px;
+    color: #444;
+}
+
+.header .container .h_c_right .ul_list {
+    float: right;
+}
+
+    .header .container .h_c_right .ul_list li {
+        float: left;
+    }
+
+        .header .container .h_c_right .ul_list li a {
+            font-size: 16px;
+            color: #333;
+            cursor: pointer;
+        }
+
+            .header .container .h_c_right .ul_list li a:hover {
+                color: #ff6700;
+            }
+
+        .header .container .h_c_right .ul_list li span {
+            margin: 0px 10px;
+            color: #b0b0b0;
+        }
+
+
+/*我的支付订单*/
+.PaymentOrder {
+    background-color: #F5F5F5;
+}
+.PaymentOrder .container {
+    /*position:relative;*/
+    top:36px;
+    width: 1226px;
+    overflow: hidden;
+    zoom: 1;
+    background-color:#FFF;
+    /*height:800px;*/
+}
+    .PaymentOrder .container .p_c_main {
+        border: 1px solid #ff6700;
+        /*height: 600px;*/
+    }
+    .PaymentOrder .container .p_c_main .p_c_left {
+        float: left;
+        /*border: 1px solid #ff6700;*/
+        width: 74%;
+        /*height: 180px;*/
+        /*height:400px;*/
+    }
+        .PaymentOrder .container .p_c_main .p_c_right {
+            float: left;
+            /*border: 1px solid #ff6700;*/
+            width: 25.67%;
+            /*height: 180px;*/
+            /*height: 400px;*/
+        }
+        .PaymentOrder .container .p_c_main .p_c_left .ul_list {
+            padding-top: 40px;
+        }
+            .PaymentOrder .container .p_c_main .p_c_left .ul_list li {
+                font-size: 14px;
+                /*padding-left: 180px;*/
+                height: 30px;
+                color:#444;
+            }
+            .PaymentOrder .container .p_c_main .p_c_left .ul_list li:nth-child(1) {
+                float: left;
+                height: 198px;
+                width:186px;
+            }
+     
+            .PaymentOrder .container .p_c_main .p_c_left .ul_list li:nth-child(1) .iconfont {
+                font-size: 80px;
+                color: #83C44E;
+                padding-left:60px;
+            }
+            .PaymentOrder .container .p_c_main .p_c_left .ul_list li:nth-child(2) {
+                font-size:26px;
+                font-weight:500;
+                color:#444;
+            }
+            .PaymentOrder .container .p_c_main .p_c_left .ul_list li:nth-child(3) {
+                /*border: 1px solid #ff6700;*/
+                height: 50px;
+                line-height: 50px;
+            }
+                .PaymentOrder .container .p_c_main .p_c_left .ul_list li:nth-child(6) {
+                    /*border: 1px solid #ff6700;*/
+                    height: 70px;
+                    position: relative;
+                }
+                    .PaymentOrder .container .p_c_main .p_c_left .ul_list li:nth-child(6) span {
+                        display: inline-block;
+                        position: absolute;
+                        top: 40px;
+                        width: 1036px;
+                        border-top: 1px solid #e0e0e0;
+                        height: 20px;
+                        line-height: 130px;
+                        color: transparent;
+                    }
+.ul_list .wuyu {
+    /*border:1px solid #ff6700;*/
+    height:150px;
+    width:700px;
+    float:right;
+}
+.wuyule {
+    /*height:500px;*/
+    /*border:1px solid red;*/
+}
+.wuyu .wuyu2 {
+    display:block;
+}
+/*右边*/
+.PaymentOrder .container .p_c_main .p_c_right .ul_list li:nth-child(1) {
+    text-align: center;
+    height: 100px;
+    /*border: 1px solid red;*/
+    line-height: 160px;
+    font-size: 22px;
+    color: #555;
+}
+        .PaymentOrder .container .p_c_main .p_c_right .ul_list li:nth-child(2) {
+            text-align: center;
+            height: 30px;
+            /*border: 1px solid red;*/
+            line-height:30px;
+            font-size:16px;
+            color: #555;
+        }
+        .PaymentOrder .container .p_c_main .p_c_right .ul_list li:nth-child(2):hover {         
+            color: red;
+        }
+
+/*支付订单底部*/
+.PaymentBottom {
+    background-color: #F5F5F5;
+}
+.PaymentBottom .container {
+    background-color: #FFF;
+}
+.PaymentBottom .container>img {
+    width:1226px;
+}
+
+/************************************小米底部1*****************************************************/
+.footer {
+    margin-top: 4px;
+    background-color: #FFFFFF;
+    overflow: hidden;
+    zoom: 1;
+}
+
+    .footer .container .f_c_top {
+        height: 82px;
+    }
+
+    .footer .container .f_c_main {
+        overflow: hidden;
+        zoom: 1;
+        padding-bottom: 28px;
+    }
+
+    .footer .container .f_c_top .ul_list li {
+        border-right: 1px solid #e0e0e0;
+        width: 172px;
+        line-height: 24px;
+        margin-top: 30px;
+        margin-left: 68px;
+        height: 24px;
+        float: left;
+    }
+
+        .footer .container .f_c_top .ul_list li:first-child {
+            margin-left: 54px;
+        }
+
+        .footer .container .f_c_top .ul_list li:last-child {
+            border-right: none;
+        }
+
+        .footer .container .f_c_top .ul_list li a i {
+            color: #777;
+            font-size: 26px;
+            -moz-user-select: none;
+        }
+
+        .footer .container .f_c_top .ul_list li a span {
+            font-size: 16px;
+            color: #666;
+        }
+
+    .footer .container .f_hr {
+        width: 1226px;
+        border-top: 1px solid #e0e0e0;
+    }
+
+    .footer .container .f_c_main .ul_list {
+        float: left;
+        width: 158.2px
+    }
+
+        .footer .container .f_c_main .ul_list:last-child {
+            float: left;
+            border-left: 1px solid #e0e0e0;
+            width: 270px;
+            text-align: center;
+        }
+
+        .footer .container .f_c_main .ul_list li:first-child {
+            font-size: 14px;
+            color: #555;
+        }
+
+        .footer .container .f_c_main .ul_list li a {
+            font-size: 12px;
+            color: #999;
+        }
+
+            .footer .container .f_c_main .ul_list li a:hover {
+                color: #ff6720;
+            }
+
+        .footer .container .f_c_main .ul_list li:first-child {
+            margin: 26px 0px;
+        }
+
+        .footer .container .f_c_main .ul_list li {
+            margin: 8px 0px;
+        }
+
+        .footer .container .f_c_main .ul_list:last-child {
+            margin-top: 28px;
+            line-height: 16px;
+        }
+
+            .footer .container .f_c_main .ul_list:last-child li {
+                margin: 0px;
+            }
+
+                .footer .container .f_c_main .ul_list:last-child li:first-child {
+                    margin-bottom: 12px;
+                    font-size: 20px;
+                    color: #ff6720;
+                }
+
+                .footer .container .f_c_main .ul_list:last-child li:last-child a {
+                    display: block;
+                    margin: auto;
+                    margin-top: 16px;
+                    width: 116px;
+                    height: 26px;
+                    color: #ff6720;
+                    font-size: 12px;
+                    line-height: 20px;
+                    border: 1px solid red;
+                }
+/**********************************小米底部2**********************************************/
+.footer2 {
+    background-color: #FAFAFA;
+}
+
+    .footer2 .container {
+        height: 170px;
+    }
+
+        .footer2 .container .f2_c_left {
+            float: left;
+            width: 770px;
+            height: 116px;
+        }
+
+        .footer2 .container .f2_c_right {
+            float: right;
+            width: 452px;
+            height: 116px;
+        }
+
+        .footer2 .container .f2_c_left ul li {
+            float: left;
+        }
+
+        .footer2 .container .f2_c_left ul:first-child {
+            margin-top: 34px;
+        }
+
+        .footer2 .container .f2_c_right ul:first-child {
+            margin-top: 34px;
+        }
+
+        .footer2 .container .f2_c_left ul li:first-child i {
+            text-align: center;
+            color: #FFFFFF;
+            background-color: #FF6B00;
+            font-size: 36px;
+            line-height: 56px;
+            margin-right: 10px;
+            display: block;
+            width: 56px;
+            height: 56px;
+            -moz-user-select: none;
+        }
+
+        .footer2 .container .f2_c_left ul:first-child li span {
+            display: inline-block;
+            color: #b0b0b0;
+            margin: 0px 4px;
+            -moz-user-select: none;
+        }
+
+        .footer2 .container .f2_c_left ul:first-child li a {
+            color: #777;
+            font-size: 12px;
+        }
+
+        .footer2 .container .f2_c_left ul:last-child li a {
+            color: #b0b0b0;
+            font-size: 12px;
+        }
+
+        .footer2 .container .f2_c_left ul:last-child li {
+            color: #b0b0b0;
+        }
+
+        .footer2 .container .f2_c_left ul li a:hover {
+            color: #ff6720;
+        }
+
+        .footer2 .container .f2_c_left ul:last-child li {
+            margin: 0px 2px;
+        }
+
+        .footer2 .container .f2_c_right ul li {
+            float: left;
+            margin-left: 6.2px;
+        }
+
+            .footer2 .container .f2_c_right ul li a img {
+                width: 84px;
+                height: 22px;
+            }
+
+        .footer2 .container .f2_c_bottom h1 {
+            font-family: KaiTi;
+            text-align: center;
+            font-weight: 500;
+            font-size: 20px;
+            color: #b0b0b0;
+            -moz-user-select: none;
+        }

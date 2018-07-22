@@ -1,0 +1,1493 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <script src="../Scripts/jquery-3.2.1.js"></script>
+    <script src="../JS/lyr_index.js"></script>
+    <link href="../Images/iconfont/iconfont.css" rel="stylesheet" />
+    <script src="../JS/lyr_PhoneDetail.js"></script>
+    <link href="../CSS/lyr_PhoneDetail.css" rel="stylesheet" />
+</head>
+<body>
+    <!-- 头部列表 -->
+    <div class="header">
+        <div class="container">
+            <div class="h_c_left">
+                <ul>
+                    <li><a href="lyr_index.html">小米商城</a><span>|</span></li>
+                    <li><a href="http://www.miui.com/">MIUI</a><span>|</span></li>
+                    <li><a href="https://iot.mi.com/index.html">LoT</a><span>|</span></li>
+                    <li><a href="https://i.mi.com/">云服务</a><span>|</span></li>
+                    <li><a href="https://shuidi.mi.com/">水滴</a><span>|</span></li>
+                    <li><a href="https://jr.mi.com/index.html">金融</a><span>|</span></li>
+                    <li><a href="https://youpin.mi.com/">有品</a><span>|</span></li>
+                    <li><a href="#">Select Region</a></li>
+                </ul>
+            </div>
+            <div class="h_c_right">
+                <div class="h_c_r_login">
+                    <ul>
+                        <li><a href="#" id="login">登录</a><span>|</span></li>
+                        <li><a href="lyr_Register.html">注册</a><span>|</span></li>
+                        <li><a href="#">消息通知</a><span>|</span></li>
+                    </ul>
+                    <!-- <i class="iconfont">&#xe609;</i>-->
+                    <!--   <ul class="user_main">
+                        <li><a href="#">评价晒单</a></li>
+                        <li><a href="#">我的喜欢</a></li>
+                        <li><a href="#">小米账户</a></li>
+                        <li><a href="#">退出登录</a></li>
+                    </ul>-->
+                </div>
+                <div class="h_c_r_shop">
+                    <i class="iconfont">&#xe60a;</i>
+                    <span class="car">购物车<span id="num">（0）</span></span>
+                    <div class="h_c_r_s_hide">
+                        购物车中还没有商品，赶紧选购吧！
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- header javaScript -->
+    <script type="text/javascript">
+        /*购物车*/
+        $(function () {
+            var shop = $(".header > .container > .h_c_right > .h_c_r_shop");
+            var shop_hide = $(".header > .container > .h_c_right > .h_c_r_shop .h_c_r_s_hide");
+            shop.hover(function () {
+                shop_hide.stop(true).slideDown();
+            }, function () {
+                shop_hide.stop(true).slideUp();
+            })
+        });
+    </script>
+    <!-- 商品导航 -->
+    <div class="nav">
+        <div class="container">
+            <!-- 小米logo区域 -->
+            <div class="n_c_logo">
+                <a href="lyr_index.html"><i class="iconfont">&#xe661;</i></a>
+                <span class="allType">全部商品分类</span>
+            </div>
+            <!-- 商品列表区域-->
+            <div class="n_c_goodlist">
+                <ul class="n_c_g_list">
+                    <li class="item_menu"><a href="#">小米手机</a></li>
+                    <li class="item_menu"><a href="#">红米</a></li>
+                    <li class="item_menu"><a href="#">笔记本</a></li>
+                    <li class="item_menu"><a href="#">电视</a></li>
+                    <li class="item_menu"><a href="#">盒子</a></li>
+                    <li><a href="#">新品</a></li>
+                    <li class="item_menu"><a href="#">路由器</a></li>
+                    <li class="item_menu"><a href="#">智能硬件</a></li>
+                    <li><a href="#">服务</a></li>
+                    <li><a href="#">社区</a></li>
+                </ul>
+            </div>
+            <!-- 搜索区域 -->
+            <div class="n_c_search">
+                <div class="n_c_s_container">
+                    <input class="userinput" type="text" placeholder="" />
+                    <input class="submit iconfont" type="submit" value="&#xe6ac;" />
+                    <div class="n_c_s_float">
+                        <a href="#">红米5新品</a>
+                        <a href="#">小米Note3</a>
+                    </div>
+                    <div class="n_c_s_downlist">
+                        <ul>
+                            <li><a href="#">小米手机6</a></li>
+                            <li><a href="#">小米手机5X</a></li>
+                            <li><a href="#">红米note4X</a></li>
+                            <li><a href="#">红米手机4X</a></li>
+                            <li><a href="#">小米Max2</a></li>
+                            <li><a href="#">手环</a></li>
+                            <li><a href="#">耳机</a></li>
+                            <li><a href="#">充电宝</a></li>
+                            <li><a href="#">运动鞋</a></li>
+                            <li><a href="#">耳机</a></li>
+                            <li><a href="#">电视</a></li>
+                        </ul>
+                    </div>
+                    <script type="text/javascript">
+                        $(function () {
+                            var s_con = $(".n_c_s_container");
+                            var s_userinput = $(".n_c_s_container .userinput");
+                            var s_submit = $(".n_c_s_container .submit");
+                            var s_n_c_s_float = $(".n_c_s_container .n_c_s_float");
+                            var s_downlist = $(".n_c_s_container .n_c_s_downlist");
+                            s_con.hover(function () {/*鼠标划入*/
+                                if (s_userinput.is(":focus")) {
+
+                                }
+                                else {
+                                    s_con.stop(true).css("border", "1px solid #B0B0B0").css("transition-duration", "0.8s");
+                                    s_submit.stop(true).css("border-left", "1px solid #B0B0B0").css("transition-duration", "0.8s");
+                                }
+                            }, function () {/*鼠标划出*/
+                                if (s_userinput.is(":focus")) {
+
+                                } else {
+                                    s_con.stop(true).css("border", "1px solid #E0E0E0").css("transition-duration", "0.8s");
+                                    s_submit.stop(true).css("border-left", "1px solid #E0E0E0").css("transition-duration", "0.8s");
+                                }
+                            });
+                            s_userinput.focusin(function () {
+                                s_con.stop(true).css("border", "1px solid #FF6700").css("transition-duration", "0.8s");
+                                s_submit.stop(true).css("border-left", "1px solid #FF6700").css("transition-duration", "0.8s");
+                                //显示文本搜索框下面的子菜单
+                                s_downlist.stop(true).slideDown(600);
+                                //隐藏浮动
+                                s_n_c_s_float.stop(true).slideUp(200);
+                            });
+                            s_userinput.focusout(function () {
+                                s_con.stop(true).css("border", "1px solid #E0E0E0").css("transition-duration", "1.5s");
+                                s_submit.stop(true).css("border-left", "1px solid #E0E0E0").css("transition-duration", "1.5s");
+                                //显示文本搜索框下面的子菜单
+                                s_downlist.stop(true).slideUp(500);
+                                //隐藏浮动
+                                s_n_c_s_float.stop(true).slideDown(200);
+                            });
+                        });
+                    </script>
+                </div>
+            </div>
+        </div>
+        <!-- 子菜单 -->
+        <div class="nav_main">
+            <div class="container">
+                <!--01 小米手机 -->
+                <ul class="n_c_xiaomilist"></ul>
+                <!-- 02红米手机 -->
+                <ul class="n_c_xiaomilist"></ul>
+                <!-- 03小米笔记本 -->
+                <ul class="n_c_xiaomilist">
+                    <li>
+                        <div>
+                            <!--<button>新品</button>-->
+                        </div>
+                        <a href="#">
+                            <img src="../Images/首页/nav_子菜单/小米笔记本/01.png" />
+                        </a>
+                        <div><a href="#">小米笔记本Air 12.5</a></div>
+                        <div><span>3599元</span></div>
+                    </li>
+                    <li><b></b></li>
+                    <li>
+                        <div>
+                            <!--<button>新品</button>-->
+                        </div>
+                        <a href="#">
+                            <img src="../Images/首页/nav_子菜单/小米笔记本/02.png" />
+                        </a>
+                        <div><a href="#">小米笔记本Air 13.3 独显</a></div>
+                        <div><span>5199元</span></div>
+                    </li>
+                    <li><b></b></li>
+                    <li>
+                        <div>
+                            <!--<button>新品</button>-->
+                        </div>
+                        <a href="#">
+                            <img src="../Images/首页/nav_子菜单/小米笔记本/03.png" />
+                        </a>
+                        <div><a href="#">小米笔记本Air 13.3 独显</a></div>
+                        <div><span>4599元起</span></div>
+                    </li>
+                    <li><b></b></li>
+                    <li>
+                        <div>
+                            <button>新品</button>
+                        </div>
+                        <a href="#">
+                            <img src="../Images/首页/nav_子菜单/小米笔记本/04.png" />
+                        </a>
+                        <div><a href="#">小米笔记本Pro 15.6</a></div>
+                        <div><span>5599元起</span></div>
+                    </li>
+                </ul>
+                <!-- 04小米电视 -->
+                <ul class="n_c_xiaomilist">
+                    <li>
+                        <div>
+                            <button>超薄旗舰</button>
+                        </div>
+                        <a href="#">
+                            <img src="../Images/首页/nav_子菜单/小米电视/01.png" />
+                        </a>
+                        <div><a href="#">小米电视4 55英寸</a></div>
+                        <!--<div><a href="#">3299 起</a></div>-->
+                    </li>
+                    <li><b></b></li>
+                    <li>
+                        <div>
+                            <button>热卖</button>
+                        </div>
+                        <a href="#">
+                            <img src="../Images/首页/nav_子菜单/小米电视/02.png" />
+                        </a>
+                        <div><a href="#">小米电视4A 65英寸</a></div>
+                        <div><span>4999元</span></div>
+                    </li>
+                    <li><b></b></li>
+                    <li>
+                        <div>
+                            <button>热卖</button>
+                        </div>
+                        <a href="#">
+                            <img src="../Images/首页/nav_子菜单/小米电视/03.png" />
+                        </a>
+                        <div><a href="#">小米电视4A 32英寸</a></div>
+                        <div><span>999元</span></div>
+                    </li>
+                    <li><b></b></li>
+                    <li>
+                        <div>
+                            <button>热卖</button>
+                        </div>
+                        <a href="#">
+                            <img src="../Images/首页/nav_子菜单/小米电视/04.png" />
+                        </a>
+                        <div><a href="#">小米电视4A 32英寸</a></div>
+                        <div><span>999元</span></div>
+                    </li>
+                    <li><b></b></li>
+                    <li>
+                        <div>
+                            <button>热卖</button>
+                        </div>
+                        <a href="#">
+                            <img src="../Images/首页/nav_子菜单/小米电视/05.png" />
+                        </a>
+                        <div><a href="#">小米电视4A 43寸</a></div>
+                        <div><span>1999元</span></div>
+                    </li>
+                    <li><b></b></li>
+                    <li>
+                        <div>
+                            <!--<button>新品</button>-->
+                        </div>
+                        <a href="#">
+                            <img src="../Images/首页/nav_子菜单/小米电视/06.png" />
+                        </a>
+                        <div><a href="#">查看全部</a></div>
+                        <div><span style="color: #333;">小米电视</span></div>
+                    </li>
+                </ul>
+                <!-- 05小米盒子 -->
+                <ul class="n_c_xiaomilist">
+                    <li>
+                        <div>
+                            <!--<button>新品</button>-->
+                        </div>
+                        <a href="#">
+                            <img src="../Images/首页/nav_子菜单/小米盒子/01.png" />
+                        </a>
+                        <div><a href="#">小米盒子3s</a></div>
+                        <div><span>349元</span></div>
+                    </li>
+                    <li><b></b></li>
+                    <li>
+                        <div>
+                            <!--<button>新品</button>-->
+                        </div>
+                        <a href="#">
+                            <img src="../Images/首页/nav_子菜单/小米盒子/02.png" />
+                        </a>
+                        <div><a href="#">小米盒子3c</a></div>
+                        <div><span>249元</span></div>
+                    </li>
+                    <li><b></b></li>
+                    <li>
+                        <div>
+                            <!--<button>新品</button>-->
+                        </div>
+                        <a href="#">
+                            <img src="../Images/首页/nav_子菜单/小米盒子/03.png" />
+                        </a>
+                        <div><a href="#">小米盒子3 增强版</a></div>
+                        <div><span>449元</span></div>
+                    </li>
+                    <li><b></b></li>
+                    <li>
+                        <div>
+                            <!--<button>新品</button>-->
+                        </div>
+                        <a href="#">
+                            <img src="../Images/首页/nav_子菜单/小米盒子/04.png" />
+                        </a>
+                        <div><a href="#">小米家庭影院</a></div>
+                        <div><span>2099元</span></div>
+                    </li>
+                </ul>
+                <!-- 06小米路由器 -->
+                <ul class="n_c_xiaomilist">
+                    <li>
+                        <div>
+                            <button>新品</button>
+                        </div>
+                        <a href="#">
+                            <img src="../Images/首页/nav_子菜单/小米路由器/01.png" />
+                        </a>
+                        <div><a href="#">小米路由器3A</a></div>
+                        <div><span>139元</span></div>
+                    </li>
+                    <li><b></b></li>
+                    <li>
+                        <div>
+                            <button>大容量</button>
+                        </div>
+                        <a href="#">
+                            <img src="../Images/首页/nav_子菜单/小米路由器/02.png" />
+                        </a>
+                        <div><a href="#">小米路由器HD/Pro</a></div>
+                        <div><span>499元起</span></div>
+                    </li>
+                    <li><b></b></li>
+                    <li>
+                        <div>
+                            <button>双千兆</button>
+                        </div>
+                        <a href="#">
+                            <img src="../Images/首页/nav_子菜单/小米路由器/03.png" />
+                        </a>
+                        <div><a href="#">小米路由器3G</a></div>
+                        <div><span>249</span></div>
+                    </li>
+                    <li><b></b></li>
+                    <li>
+                        <div>
+                            <button>双频</button>
+                        </div>
+                        <a href="#">
+                            <img src="../Images/首页/nav_子菜单/小米路由器/04.png" />
+                        </a>
+                        <div><a href="#">小米路由器3</a></div>
+                        <div><span>149元</span></div>
+                    </li>
+                    <li><b></b></li>
+                    <li>
+                        <div>
+                            <button>包邮</button>
+                        </div>
+                        <a href="#">
+                            <img src="../Images/首页/nav_子菜单/小米路由器/05.png" />
+                        </a>
+                        <div><a href="#">小米路由器3C</a></div>
+                        <div><span>99元</span></div>
+                    </li>
+                    <li><b></b></li>
+                    <li>
+                        <div>
+                            <!--<button>新品</button>-->
+                        </div>
+                        <a href="#">
+                            <img src="../Images/首页/nav_子菜单/小米路由器/06.png" />
+                        </a>
+                        <div><a href="#">小米WiFi放大器2</a></div>
+                        <div><span>49元</span></div>
+                    </li>
+                </ul>
+                <!-- 07小米智能硬件 -->
+                <ul class="n_c_xiaomilist">
+                    <li>
+                        <div>
+                            <button>航拍利器</button>
+                        </div>
+                        <a href="#">
+                            <img src="../Images/首页/nav_子菜单/小米智能硬件/01.png" />
+                        </a>
+                        <div><a href="#">小米无人机</a></div>
+                        <div><span>2999元</span></div>
+                    </li>
+                    <li><b></b></li>
+                    <li>
+                        <div>
+                            <button>包邮</button>
+                        </div>
+                        <a href="#">
+                            <img src="../Images/首页/nav_子菜单/小米智能硬件/02.png" />
+                        </a>
+                        <div><a href="#">小米手环2</a></div>
+                        <div><span>149元</span></div>
+                    </li>
+                    <li><b></b></li>
+                    <li>
+                        <div>
+                            <!--<button>包邮</button>-->
+                        </div>
+                        <a href="#">
+                            <img src="../Images/首页/nav_子菜单/小米智能硬件/03.png" />
+                        </a>
+                        <div><a href="#">小米净水器</a></div>
+                        <div><span>1499元起</span></div>
+                    </li>
+                    <li><b></b></li>
+                    <li>
+                        <div>
+                            <!--<button>包邮</button>-->
+                        </div>
+                        <a href="#">
+                            <img src="../Images/首页/nav_子菜单/小米智能硬件/04.png" />
+                        </a>
+                        <div><a href="#">米家扫地机器人</a></div>
+                        <div><span>1699元</span></div>
+                    </li>
+                    <li><b></b></li>
+                    <li>
+                        <div>
+                            <!--<button>包邮</button>-->
+                        </div>
+                        <a href="#">
+                            <img src="../Images/首页/nav_子菜单/小米智能硬件/05.png" />
+                        </a>
+                        <div><a href="#">米家压力IH电饭煲</a></div>
+                        <div><span>999元</span></div>
+                    </li>
+                    <li><b></b></li>
+                    <li>
+                        <div>
+                            <!--<button>包邮</button>-->
+                        </div>
+                        <a href="#">
+                            <img src="../Images/首页/nav_子菜单/小米智能硬件/06.png" />
+                        </a>
+                        <div><a href="#">查看全部</a></div>
+                        <div><span style="color: #333;">智能硬件</span></div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- nav 子菜单鼠标划过事件JavaScript -->
+        <script type="text/javascript">
+            $(function () {
+                var item_menu = $(".n_c_g_list .item_menu");//小米手机
+                var nav_main = $(".nav_main");//提供一个平台给商品展示
+                var n_c_xiaomilist = $(".n_c_xiaomilist");//商品列表
+                item_menu.hover(function () {
+                    nav_main.stop(true).slideDown();//首先给它一个表演的平台
+                    var _index = $(this).index();//取得当前索引号
+                    //由于匹配的索引隔了一个索引号，所以要减掉
+                    if (_index == 6 || _index == 7) {
+                        _index -= 1;
+                    }
+                    n_c_xiaomilist.eq(_index).show().siblings().hide();//显示当前对应的下标商品，并且把同辈元素隐藏
+                }, function () {
+                    nav_main.stop(true).slideUp();
+                })
+                //始终提供一个平台
+                nav_main.hover(function () {
+                    nav_main.stop(true).slideDown();//首先给它一个表演的平台                 
+                }, function () {
+                    nav_main.stop(true).slideUp();
+                })
+            });
+        </script>
+    </div>
+    <!-- 图片轮番 -->
+    <div class="banner">
+        <div class="container">
+            <!-- 轮番图左侧商品列表 -->
+            <div class="b_c_list">
+                <ul class="b_c_l_downlist">
+                    <li><a href="#">手机 电话卡</a><i class="iconfont">&#xe679;</i></li>
+                    <li><a href="#">笔记本</a><i class="iconfont">&#xe679;</i></li>
+                    <li><a href="#">电视 盒子</a><i class="iconfont">&#xe679;</i></li>
+                    <li><a href="#">路由器 智能硬件</a><i class="iconfont">&#xe679;</i></li>
+                    <li><a href="#">移动电源 电池 插线板</a><i class="iconfont">&#xe679;</i></li>
+                    <li><a href="#">耳机 音箱</a><i class="iconfont">&#xe679;</i></li>
+                    <li><a href="#">保护套 贴膜</a><i class="iconfont">&#xe679;</i></li>
+                    <li><a href="#">线材 支架 存储卡</a><i class="iconfont">&#xe679;</i></li>
+                    <li><a href="#">箱包 服饰 鞋子 眼镜</a><i class="iconfont">&#xe679;</i></li>
+                    <li><a href="#">米兔 生活周边</a><i class="iconfont">&#xe679;</i></li>
+                </ul>
+            </div>
+            <!-- 商品列表滑动显示子菜单区域 -->
+            <!-- 01手机 电话卡 -->
+            <div class="b_c_main">
+                <!-- 第1列 -->
+                <ul class="b_c_m_rightlist"></ul>
+                <!-- 第2列 -->
+                <ul class="b_c_m_rightlist"></ul>
+                <!-- 第3列 -->
+                <ul class="b_c_m_rightlist">
+                    <li>
+                        <a>
+                            <img src="../Images/首页/侧边列表/手机电话卡/3-01.png" />
+                            <span>对比手机</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a>
+                            <img src="../Images/首页/侧边列表/手机电话卡/3-02.png" />
+                            <span>米粉卡 日租卡</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a>
+                            <img src="../Images/首页/侧边列表/手机电话卡/3-03.png" />
+                            <span>小米移动 电话卡</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!-- 02笔记本 -->
+            <div class="b_c_main">
+                <!-- 第1列 -->
+                <ul class="b_c_m_rightlist">
+                    <li>
+                        <a>
+                            <img src="../Images/首页/侧边列表/小米笔记本/01.png" />
+                            <span>笔记本Air 12.5</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a>
+                            <img src="../Images/首页/侧边列表/小米笔记本/02.png" />
+                            <span>笔记本Air 13.3 独显</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a>
+                            <img src="../Images/首页/侧边列表/小米笔记本/03.png" />
+                            <span>笔记本Air 13.3 集显</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a>
+                            <img src="../Images/首页/侧边列表/小米笔记本/04.png" />
+                            <span>笔记本Pro 15.6</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a>
+                            <img src="../Images/首页/侧边列表/小米笔记本/05.png" />
+                            <span>USB-C电源适配器</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a>
+                            <img src="../Images/首页/侧边列表/小米笔记本/06.png" />
+                            <span>USB-C转接器</span>
+                        </a>
+                    </li>
+                </ul>
+                <!-- 第2列 -->
+                <ul class="b_c_m_rightlist">
+                    <li>
+                        <a>
+                            <img src="../Images/首页/侧边列表/小米笔记本/2-01.png" />
+                            <span>VGA 千兆网口转接器</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a>
+                            <img src="../Images/首页/侧边列表/小米笔记本/2-02.png" />
+                            <span>小米笔记本内胆包</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a>
+                            <img src="../Images/首页/侧边列表/小米笔记本/2-03.png" />
+                            <span>悦米机械盘</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a>
+                            <img src="../Images/首页/侧边列表/小米笔记本/2-04.png" />
+                            <span>小米便携鼠标</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a>
+                            <img src="../Images/首页/侧边列表/小米笔记本/2-05.png" />
+                            <span>小米无线鼠标</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a>
+                            <img src="../Images/首页/侧边列表/小米笔记本/2-06.png" />
+                            <span>鼠标垫</span>
+                        </a>
+                    </li>
+                </ul>
+                <!-- 第3列 -->
+                <ul class="b_c_m_rightlist">
+                    <li>
+                        <a>
+                            <img src="../Images/首页/侧边列表/小米笔记本/3-01.png" />
+                            <span>DisplayPort转接器</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!-- 03电视盒子 -->
+            <div class="b_c_main">
+                <!-- 第1列 -->
+                <ul class="b_c_m_rightlist">
+                    <li>
+                        <a>
+                            <img src="../Images/首页/侧边列表/小米电视盒子/01.png" />
+                            <span>小米电视4C 43英寸</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a>
+                            <img src="../Images/首页/侧边列表/小米电视盒子/02.png" />
+                            <span>小米电视4C 55英寸</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a>
+                            <img src="../Images/首页/侧边列表/小米电视盒子/03.png" />
+                            <span>小米电视4 49英寸</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a>
+                            <img src="../Images/首页/侧边列表/小米电视盒子/04.png" />
+                            <span>小米电视4 55英寸</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a>
+                            <img src="../Images/首页/侧边列表/小米电视盒子/05.png" />
+                            <span>小米电视4 65英寸</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a>
+                            <img src="../Images/首页/侧边列表/小米电视盒子/06.png" />
+                            <span>小米电视4A 32英寸</span>
+                        </a>
+                    </li>
+                </ul>
+                <!-- 第2列 -->
+                <ul class="b_c_m_rightlist">
+                    <li>
+                        <a>
+                            <img src="../Images/首页/侧边列表/小米电视盒子/2-01.png" />
+                            <span>小米电视4A 43英寸</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a>
+                            <img src="../Images/首页/侧边列表/小米电视盒子/2-02.png" />
+                            <span>小米电视4A 49英寸</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a>
+                            <img src="../Images/首页/侧边列表/小米电视盒子/2-03.png" />
+                            <span>小米电视4A 55英寸</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a>
+                            <img src="../Images/首页/侧边列表/小米电视盒子/2-04.png" />
+                            <span>小米电视4A 65英寸</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a>
+                            <img src="../Images/首页/侧边列表/小米电视盒子/2-05.png" />
+                            <span>小米电视3s 65英寸 曲面</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a>
+                            <img src="../Images/首页/侧边列表/小米电视盒子/2-06.png" />
+                            <span>小米盒子3s</span>
+                        </a>
+                    </li>
+                </ul>
+                <!-- 第3列 -->
+                <ul class="b_c_m_rightlist">
+                    <li>
+                        <a>
+                            <img src="../Images/首页/侧边列表/小米电视盒子/3-01.png" />
+                            <span>小米盒子3c</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a>
+                            <img src="../Images/首页/侧边列表/小米电视盒子/3-02.png" />
+                            <span>小米盒子3s增强版</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a>
+                            <img src="../Images/首页/侧边列表/小米电视盒子/3-03.png" />
+                            <span>家庭音响</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a>
+                            <img src="../Images/首页/侧边列表/小米电视盒子/3-04.png" />
+                            <span>安装服务</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a>
+                            <img src="../Images/首页/侧边列表/小米电视盒子/3-05.png" />
+                            <span>电视盒子配件</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a>
+                            <img src="../Images/首页/侧边列表/小米电视盒子/3-06.png" />
+                            <span>小米影视会员</span>
+                        </a>
+                    </li>
+                </ul>
+                <!-- 第4列-->
+                <ul class="b_c_m_rightlist">
+                    <li>
+                        <a>
+                            <img src="../Images/首页/侧边列表/小米电视盒子/4-01.png" />
+                            <span>小米儿童会员</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!--04路由器 智能硬件 -->
+            <div class="b_c_main">
+                <!-- 第1列 -->
+                <ul class="b_c_m_rightlist">
+                    <li>
+                        <a>
+                            <img src="../Images/首页/侧边列表/小路由器智能硬件/01.jpg" />
+                            <span>九号平衡车</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a>
+                            <img src="../Images/首页/侧边列表/小路由器智能硬件/02.jpg" />
+                            <span>米家扫地机器人及配件</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a>
+                            <img src="../Images/首页/侧边列表/小路由器智能硬件/03.jpg" />
+                            <span>小米VR眼镜</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a>
+                            <img src="../Images/首页/侧边列表/小路由器智能硬件/04.jpg" />
+                            <span>小米路由器</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a>
+                            <img src="../Images/首页/侧边列表/小路由器智能硬件/05.jpg" />
+                            <span>电助力折叠自行车</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a>
+                            <img src="../Images/首页/侧边列表/小路由器智能硬件/06.jpg" />
+                            <span>电水壶</span>
+                        </a>
+                    </li>
+                </ul>
+                <!-- 第2列 -->
+                <ul class="b_c_m_rightlist">
+                    <li>
+                        <a>
+                            <img src="../Images/首页/侧边列表/小路由器智能硬件/2-01.jpg" />
+                            <span>米家车载空气净水器</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a>
+                            <img src="../Images/首页/侧边列表/小路由器智能硬件/2-02.jpg" />
+                            <span>手表</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a>
+                            <img src="../Images/首页/侧边列表/小路由器智能硬件/2-03.jpg" />
+                            <span>米家智能电饭煲</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a>
+                            <img src="../Images/首页/侧边列表/小路由器智能硬件/2-04.jpg" />
+                            <span>智能摄像机/相机微单</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a>
+                            <img src="../Images/首页/侧边列表/小路由器智能硬件/2-05.jpg" />
+                            <span>净水器及滤芯</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a>
+                            <img src="../Images/首页/侧边列表/小路由器智能硬件/2-06.jpg" />
+                            <span>净水器及滤芯</span>
+                        </a>
+                    </li>
+                </ul>
+                <!-- 第3列 -->
+                <ul class="b_c_m_rightlist">
+                    <li>
+                        <a>
+                            <img src="../Images/首页/侧边列表/小路由器智能硬件/3-01.jpg" />
+                            <span>手环配件</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a>
+                            <img src="../Images/首页/侧边列表/小路由器智能硬件/3-02.jpg" />
+                            <span>牙刷</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a>
+                            <img src="../Images/首页/侧边列表/小路由器智能硬件/3-03.jpg" />
+                            <span>智能灯</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a>
+                            <img src="../Images/首页/侧边列表/小路由器智能硬件/3-04.jpg" />
+                            <span>米兔智能故事机</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a>
+                            <img src="../Images/首页/侧边列表/小路由器智能硬件/3-05.jpg" />
+                            <span>智能家庭组合</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a>
+                            <img src="../Images/首页/侧边列表/小路由器智能硬件/3-06.jpg" />
+                            <span>血压计</span>
+                        </a>
+                    </li>
+                </ul>
+                <!-- 第4列-->
+                <ul class="b_c_m_rightlist">
+                    <li>
+                        <a>
+                            <img src="../Images/首页/侧边列表/小路由器智能硬件/4-01.jpg" />
+                            <span>体重秤/体脂秤</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a>
+                            <img src="../Images/首页/侧边列表/小路由器智能硬件/4-02.jpg" />
+                            <span>电动滑板车</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a>
+                            <img src="../Images/首页/侧边列表/小路由器智能硬件/4-03.jpg" />
+                            <span>小米无人机</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a>
+                            <img src="../Images/首页/侧边列表/小路由器智能硬件/4-04.jpg" />
+                            <span>米家行车记录仪</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a>
+                            <img src="../Images/首页/侧边列表/小路由器智能硬件/4-05.jpg" />
+                            <span>小米米家对讲机</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a>
+                            <img src="../Images/首页/侧边列表/小路由器智能硬件/4-06.jpg" />
+                            <span>全部智能硬件</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!--05移动电源 电池 插线板 -->
+            <div class="b_c_main">
+                <!-- 第1列 -->
+                <ul class="b_c_m_rightlist">
+                    <li>
+                        <a>
+                            <img src="../Images/首页/侧边列表/移动电源电池/01.jpg" />
+                            <span>小米移动电源</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a>
+                            <img src="../Images/首页/侧边列表/移动电源电池/02.jpg" />
+                            <span>插线板</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a>
+                            <img src="../Images/首页/侧边列表/移动电源电池/03.jpg" />
+                            <span>品牌移动电源</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a>
+                            <img src="../Images/首页/侧边列表/移动电源电池/04.jpg" />
+                            <span>移动电源附件</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a>
+                            <img src="../Images/首页/侧边列表/移动电源电池/05.jpg" />
+                            <span>充电器</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a>
+                            <img src="../Images/首页/侧边列表/移动电源电池/06.jpg" />
+                            <span>彩虹5号电池</span>
+                        </a>
+                    </li>
+                </ul>
+                <!-- 第2列 -->
+                <ul class="b_c_m_rightlist">
+                    <li>
+                        <a>
+                            <img src="../Images/首页/侧边列表/移动电源电池/2-01.jpg" />
+                            <span>彩虹7号电池</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a>
+                            <img src="../Images/首页/侧边列表/移动电源电池/2-02.jpg" />
+                            <span>小米手电筒</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!--06小米耳机 音箱 -->
+            <div class="b_c_main">
+                <!-- 第1列 -->
+                <ul class="b_c_m_rightlist">
+                    <li>
+                        <a>
+                            <img src="../Images/首页/侧边列表/小米耳机音箱/01.jpg" />
+                            <span>小米头戴式耳机</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a>
+                            <img src="../Images/首页/侧边列表/小米耳机音箱/02.jpg" />
+                            <span>头戴式耳机轻松版</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a>
+                            <img src="../Images/首页/侧边列表/小米耳机音箱/03.jpg" />
+                            <span>小米降噪耳机</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a>
+                            <img src="../Images/首页/侧边列表/小米耳机音箱/04.jpg" />
+                            <span>小米降噪耳机Type-C版</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a>
+                            <img src="../Images/首页/侧边列表/小米耳机音箱/05.jpg" />
+                            <span>小米圈铁耳机 Pro</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a>
+                            <img src="../Images/首页/侧边列表/小米耳机音箱/06.jpg" />
+                            <span>小米圈铁耳机</span>
+                        </a>
+                    </li>
+                </ul>
+                <!-- 第2列 -->
+                <ul class="b_c_m_rightlist">
+                    <li>
+                        <a>
+                            <img src="../Images/首页/侧边列表/小米耳机音箱/2-01.jpg" />
+                            <span>小米胶囊耳机</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a>
+                            <img src="../Images/首页/侧边列表/小米耳机音箱/2-02.jpg" />
+                            <span>小米活塞耳机清新版</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a>
+                            <img src="../Images/首页/侧边列表/小米耳机音箱/2-03.jpg" />
+                            <span>小米蓝牙耳机</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a>
+                            <img src="../Images/首页/侧边列表/小米耳机音箱/2-04.jpg" />
+                            <span>小米运动蓝牙耳机</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a>
+                            <img src="../Images/首页/侧边列表/小米耳机音箱/2-05.jpg" />
+                            <span>小米运动蓝牙耳机mini</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a>
+                            <img src="../Images/首页/侧边列表/小米耳机音箱/2-06.jpg" />
+                            <span>品牌耳机</span>
+                        </a>
+                    </li>
+                </ul>
+                <!-- 第3列 -->
+                <ul class="b_c_m_rightlist">
+                    <li>
+                        <a>
+                            <img src="../Images/首页/侧边列表/小米耳机音箱/3-01.jpg" />
+                            <span>小米网络音响</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a>
+                            <img src="../Images/首页/侧边列表/小米耳机音箱/3-02.jpg" />
+                            <span>小米蓝牙音箱</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a>
+                            <img src="../Images/首页/侧边列表/小米耳机音箱/3-03.jpg" />
+                            <span>小米随身蓝牙音箱</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a>
+                            <img src="../Images/首页/侧边列表/小米耳机音箱/3-04.jpg" />
+                            <span>小钢炮音箱 2</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a>
+                            <img src="../Images/首页/侧边列表/小米耳机音箱/3-05.jpg" />
+                            <span>小米盒子蓝牙音箱2</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a>
+                            <img src="../Images/首页/侧边列表/小米耳机音箱/3-06.jpg" />
+                            <span>小米音乐闹钟</span>
+                        </a>
+                    </li>
+                </ul>
+                <!-- 第4列 -->
+                <ul class="b_c_m_rightlist">
+                    <li>
+                        <a>
+                            <img src="../Images/首页/侧边列表/小米耳机音箱/4-01.jpg" />
+                            <span>小米米兔音箱</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a>
+                            <img src="../Images/首页/侧边列表/小米耳机音箱/4-02.jpg" />
+                            <span>音乐蓝牙车充</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a>
+                            <img src="../Images/首页/侧边列表/小米耳机音箱/4-03.jpg" />
+                            <span>小米蓝牙音频接收器</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a>
+                            <img src="../Images/首页/侧边列表/小米耳机音箱/4-04.jpg" />
+                            <span>小米AI音箱</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!--07小米保护套贴膜 -->
+            <div class="b_c_main">
+                <!-- 第1列 -->
+                <ul class="b_c_m_rightlist">
+                    <li>
+                        <a>
+                            <img src="../Images/首页/侧边列表/小米保护套贴膜/01.jpg" />
+                            <span>贴膜</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a>
+                            <img src="../Images/首页/侧边列表/小米保护套贴膜/02.jpg" />
+                            <span>保护套/保护壳</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!--08线材支架存储卡 -->
+            <div class="b_c_main">
+                <!-- 第1列 -->
+                <ul class="b_c_m_rightlist">
+                    <li>
+                        <a>
+                            <img src="../Images/首页/侧边列表/线材支架存储卡/01.jpg" />
+                            <span>线材</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a>
+                            <img src="../Images/首页/侧边列表/线材支架存储卡/02.jpg" />
+                            <span>自拍杆</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a>
+                            <img src="../Images/首页/侧边列表/线材支架存储卡/03.jpg" />
+                            <span>手机支架</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a>
+                            <img src="../Images/首页/侧边列表/线材支架存储卡/04.jpg" />
+                            <span>存储卡</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!--09箱包服饰鞋眼镜 -->
+            <div class="b_c_main">
+                <!-- 第1列 -->
+                <ul class="b_c_m_rightlist">
+                    <li>
+                        <a>
+                            <img src="../Images/首页/侧边列表/箱包服饰鞋眼镜/01.jpg" />
+                            <span>箱包</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a>
+                            <img src="../Images/首页/侧边列表/箱包服饰鞋眼镜/02.jpg" />
+                            <span>90分旅行箱</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a>
+                            <img src="../Images/首页/侧边列表/箱包服饰鞋眼镜/03.jpg" />
+                            <span>服饰</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a>
+                            <img src="../Images/首页/侧边列表/箱包服饰鞋眼镜/04.jpg" />
+                            <span>运动鞋 板鞋</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a>
+                            <img src="../Images/首页/侧边列表/箱包服饰鞋眼镜/05.jpg" />
+                            <span>眼镜</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!--10米兔生活周边 -->
+            <div class="b_c_main">
+                <!-- 第1列 -->
+                <ul class="b_c_m_rightlist">
+                    <li>
+                        <a>
+                            <img src="../Images/首页/侧边列表/米兔生活周边/01.jpg" />
+                            <span>米兔玩偶</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a>
+                            <img src="../Images/首页/侧边列表/米兔生活周边/02.jpg" />
+                            <span>生活周边</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a>
+                            <img src="../Images/首页/侧边列表/米兔生活周边/03.jpg" />
+                            <span>《小米》会刊</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a>
+                            <img src="../Images/首页/侧边列表/米兔生活周边/04.jpg" />
+                            <span>毛巾浴巾</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a>
+                            <img src="../Images/首页/侧边列表/米兔生活周边/05.jpg" />
+                            <span>8H家居产品</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <script type="text/javascript">
+                $(function () {
+                    //显示侧边栏
+                    $(".nav .container .n_c_logo .allType").hover(function () {
+                        $(".banner .container .b_c_list").show();
+                    }, function () {
+                        $(".banner .container .b_c_list").hide();
+                    });
+                    //显示侧边栏2(移动到自己也要显示)
+                    $(".banner .container .b_c_list").hover(function () {
+                        $(".banner .container .b_c_list").show();
+                    }, function () {
+                        $(".banner .container .b_c_list").hide();
+                    });
+
+
+                    var li_hover = $(".banner .container .b_c_list .b_c_l_downlist li");
+                    var div_show = $(".banner .container .b_c_main")
+                    var ul_size = $(".banner .container .b_c_main .b_c_m_rightlist");
+                    //给第四列ul宽度调整到最佳大小
+                    $(ul_size).each(function () {
+                        //alert($(this).index());//取得下标
+                        //在b_c_main所有子元素（ul）
+                        if ($(this).index() == 2) {//第三列
+                            $(this).css("width", "235px");
+                        }
+                        if ($(this).index() == 3) {//第四列
+                            $(this).css("width", "236px");
+                        }
+                    });
+
+                    var _index;//下标
+                    li_hover.hover(function () {
+                        _index = $(this).index();//取得下标
+                        div_show.eq(_index).show().siblings(".b_c_main").hide();//显示
+                        $(this).children("a").css("color", "#fff");
+                    }, function () {
+                        div_show.hide();//隐藏
+                        $(this).children("a").css("color", "#000");
+                    });
+                    div_show.hover(function () {
+                        div_show.eq(_index).show().siblings(".b_c_main").hide();//显示
+                        $(".banner .container .b_c_list").show();
+                    }, function () {
+                        div_show.hide();//隐藏
+                        $(".banner .container .b_c_list").hide();
+                    });
+                });
+            </script>
+        </div>
+    </div>
+    <!-- 手机详细信息立即购买 -->
+    <div class="PhoneShopp">
+        <div class="container">
+            <div class="p_c_left">
+                <ul class="ul_list">
+                    <li class="title"></li>
+                    <!--<li><a href="#">小米MIX 2 斯塔克限量版</a></li>-->
+                </ul>
+            </div>
+            <div class="p_c_right">
+                <ul class="ul_list">
+                    <li class="btnClick"><a href="#">概述</a><span>|</span></li>
+                    <li class="btnClick"><a href="#">图集</a><span>|</span></li>
+                    <li class="btnClick"><a href="#">参数</a><span>|</span></li>
+                    <li class="btnClick"><a href="#">F码通道</a><span>|</span></li>
+                    <li class="btnClick"><a href="#">用户评价</a><span>|</span></li>
+                    <li><a href="#" class="addCart">立即购买</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--  手机详细信息立即购买 JavaScript -->
+    <script type="text/javascript">
+        $(function () {
+            var p_shopp = $(".PhoneShopp .container");
+            $(this).scroll(function () {
+                if ($(window).scrollTop() >= 140) {
+                    //将 div 固定居中
+                    p_shopp.css("position", "fixed");
+                    p_shopp.css("top", "0px").css("left", "50%").css("margin-left", "-613px");
+                }
+                else {
+                    p_shopp.css("position", "");
+                }
+            });
+        });
+    </script>
+    <!--小米内容图片 -->
+    <div class="content">
+        <div class="container">
+            <!-- 概述 -->
+            <div class="pic" style="display: block;">
+               <!-- <img src="../Images/小米商品/手机详细/红米5/01.png" />-->
+            </div>
+            <!-- 图集 -->
+            <div class="pic">
+                <!--<img src="../Images/小米商品/手机详细/红米5/02.png" />-->
+            </div>
+            <!-- 参数 -->
+            <div class="pic">
+                <!--<img src="../Images/小米商品/手机详细/红米5/03.png" />-->
+            </div>
+              <!-- F码通道 -->
+            <div class="pic">
+                <!--<img src="../Images/小米商品/手机详细/红米5/03.png" />-->
+            </div>
+              <!-- 用户评价 -->
+            <div class="pic">
+                <!--<img src="../Images/小米商品/手机详细/红米5/03.png" />-->
+            </div>
+        </div>
+    </div>
+    <!-- 小米底部 -->
+    <div class="footer">
+        <div class="container">
+            <div class="f_c_top">
+                <ul class="ul_list">
+                    <li>
+                        <a href="#"><i class="iconfont">&#xe601;</i>
+                            <span>预约维修服务</span>
+                        </a>
+                    </li>
+                    <li><a href="#">
+                        <i class="iconfont">&#xe609;</i>
+                        <span>7天无理由退货</span>
+                    </a>
+                    </li>
+                    <li><a href="#">
+                        <i class="iconfont">&#xe607;</i>
+                        <span>15天免费换货</span>
+                    </a>
+                    </li>
+                    <li><a href="#">
+                        <i class="iconfont">&#xe608;</i>
+                        <span>满150元包邮</span>
+                    </a>
+                    </li>
+                    <li><a href="#">
+                        <i class="iconfont">&#xe610;</i>
+                        <span>520余家售后网点</span>
+                    </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="f_hr"></div>
+            <div class="f_c_main">
+                <ul class="ul_list">
+                    <li>帮助中心</li>
+                    <li><a href="#">账户管理</a></li>
+                    <li><a href="#">购物指南</a></li>
+                    <li><a href="#">订单操作</a></li>
+                </ul>
+                <ul class="ul_list">
+                    <li>服务支持</li>
+                    <li><a href="#">售后政策</a></li>
+                    <li><a href="#">自助服务</a></li>
+                    <li><a href="#">相关下载</a></li>
+                </ul>
+                <ul class="ul_list">
+                    <li>线下门店</li>
+                    <li><a href="#">小米之家</a></li>
+                    <li><a href="#">购物指南</a></li>
+                    <li><a href="#">零售网点</a></li>
+                </ul>
+                <ul class="ul_list">
+                    <li>关于小米</li>
+                    <li><a href="#">了解小米</a></li>
+                    <li><a href="#">加入小米</a></li>
+                    <li><a href="#">联系我们</a></li>
+                </ul>
+                <ul class="ul_list">
+                    <li>关注我们</li>
+                    <li><a href="#">新浪微博</a></li>
+                    <li><a href="#">小米部落</a></li>
+                    <li><a href="#">官方微信</a></li>
+                </ul>
+                <ul class="ul_list">
+                    <li>特色服务</li>
+                    <li><a href="#">F 码通道</a></li>
+                    <li><a href="#">礼物码</a></li>
+                    <li><a href="#">防伪查询</a></li>
+                </ul>
+                <ul class="ul_list">
+                    <li>400-100-5678</li>
+                    <li>周一至周日 8:00-18:00</></li>
+                    <li>（仅收市话费）</li>
+                    <li><a href="#"><i class="iconfont">&#xe700;</i>24小时在线客服</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="footer2">
+        <div class="container">
+            <div class="f2_c_left">
+                <ul>
+                    <li><i class="iconfont">&#xe661;</i></li>
+                    <li><a href="#">小米商城</a><span>|</span></li>
+                    <li><a href="#">MIUI</a><span>|</span></li>
+                    <li><a href="#">米家</a><span>|</span></li>
+                    <li><a href="#">米聊</a><span>|</span></li>
+                    <li><a href="#">多看</a><span>|</span></li>
+                    <li><a href="#">路由器</a><span>|</span></li>
+                    <li><a href="#">米粉卡</a><span>|</span></li>
+                    <li><a href="#">小米天猫店</a><span>|</span></li>
+                    <li><a href="#">隐私政策</a><span>|</span></li>
+                    <li><a href="#">问题反馈</a><span>|</span></li>
+                    <li><a href="#">Select Region</a><span>|</span></li>
+                </ul>
+                <br />
+                <ul>
+                    <li><a href="#">©mi.com</a></li>
+                    <li>京ICP证110507号</li>
+                    <li><a href="#">京ICP备10046444号</a></li>
+                    <li><a href="#">京公网安备11010802020134号</a></li>
+                    <li><a href="#">京网文[2014]0059-0009号</a></li>
+                    <li>违法和不良信息举报电话：185-0130-1238，本网站所列数据，除特殊说明，所有数据均出自我司实验室测试</li>
+                </ul>
+            </div>
+            <div class="f2_c_right">
+                <ul>
+                    <li><a href="#">
+                        <img src="../Images/首页/底部/1-01.png" /></a>
+                    </li>
+                    <li><a href="#">
+                        <img src="../Images/首页/底部/1-02.png" /></a>
+                    </li>
+                    <li><a href="#">
+                        <img src="../Images/首页/底部/1-03.png" /></a>
+                    </li>
+                    <li><a href="#">
+                        <img src="../Images/首页/底部/1-04.png" /></a>
+                    </li>
+                    <li><a href="#">
+                        <img src="../Images/首页/底部/1-05.png" /></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="f2_c_bottom">
+                <h1>探索黑科技，小米为发烧而生!</h1>
+            </div>
+        </div>
+    </div>
+    <!-- footer脚本代码 -->
+    <script type="text/javascript">
+        $(function () {
+            $(".footer .container .f_c_top .ul_list li a").hover(function () {
+                $(this).children("i").css("color", "#ff6720");
+                $(this).children("span").css("color", "#ff6720");
+            }, function () {
+                $(this).children("i").css("color", "#666");
+                $(this).children("span").css("color", "#666");
+            })
+        });
+    </script>
+</body>
+</html>

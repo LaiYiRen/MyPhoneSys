@@ -1,0 +1,165 @@
+E:\开发资料\TprEnglish\DBUtility\obj\Debug\ResolveAssemblyReference.cache
+E:\开发资料\TprEnglish\DBUtility\bin\Debug\DBUtility.dll
+E:\开发资料\TprEnglish\DBUtility\bin\Debug\DBUtility.pdb
+E:\开发资料\TprEnglish\DBUtility\obj\Debug\DBUtility.dll
+E:\开发资料\TprEnglish\DBUtility\obj\Debug\DBUtility.pdb
+E:\likeming\TprEnglish\DBUtility\bin\Debug\DBUtility.dll
+E:\likeming\TprEnglish\DBUtility\bin\Debug\DBUtility.pdb
+E:\likeming\TprEnglish\DBUtility\obj\Debug\ResolveAssemblyReference.cache
+E:\likeming\TprEnglish\DBUtility\obj\Debug\DBUtility.dll
+E:\likeming\TprEnglish\DBUtility\obj\Debug\DBUtility.pdb
+E:\likeming\BeiShan\DBUtility\bin\Debug\DBUtility.dll
+E:\likeming\BeiShan\DBUtility\bin\Debug\DBUtility.pdb
+E:\likeming\BeiShan\DBUtility\obj\Debug\ResolveAssemblyReference.cache
+E:\likeming\BeiShan\DBUtility\obj\Debug\DBUtility.dll
+E:\likeming\BeiShan\DBUtility\obj\Debug\DBUtility.pdb
+F:\likeming\自主开发\BeiShan\DBUtility\bin\Debug\DBUtility.dll
+F:\likeming\自主开发\BeiShan\DBUtility\bin\Debug\DBUtility.pdb
+F:\likeming\自主开发\BeiShan\DBUtility\obj\Debug\ResolveAssemblyReference.cache
+F:\likeming\自主开发\BeiShan\DBUtility\obj\Debug\DBUtility.dll
+F:\likeming\自主开发\BeiShan\DBUtility\obj\Debug\DBUtility.pdb
+C:\Documents and Settings\Administrator\桌面\App_Base\DBUtility\bin\Debug\DBUtility.dll
+C:\Documents and Settings\Administrator\桌面\App_Base\DBUtility\bin\Debug\DBUtility.pdb
+C:\Documents and Settings\Administrator\桌面\App_Base\DBUtility\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Administrator\桌面\App_Base\DBUtility\obj\Debug\DBUtility.dll
+C:\Documents and Settings\Administrator\桌面\App_Base\DBUtility\obj\Debug\DBUtility.pdb
+F:\likeming\自主开发\App_Base\DBUtility\bin\Debug\DBUtility.dll
+F:\likeming\自主开发\App_Base\DBUtility\bin\Debug\DBUtility.pdb
+F:\likeming\自主开发\App_Base\DBUtility\obj\Debug\ResolveAssemblyReference.cache
+F:\likeming\自主开发\App_Base\DBUtility\obj\Debug\DBUtility.dll
+F:\likeming\自主开发\App_Base\DBUtility\obj\Debug\DBUtility.pdb
+E:\App_Base\DBUtility\bin\Debug\DBUtility.dll
+E:\App_Base\DBUtility\bin\Debug\DBUtility.pdb
+E:\App_Base\DBUtility\obj\Debug\ResolveAssemblyReference.cache
+E:\App_Base\DBUtility\obj\Debug\DBUtility.dll
+E:\App_Base\DBUtility\obj\Debug\DBUtility.pdb
+D:\App_Base\DBUtility\bin\Debug\DBUtility.dll
+D:\App_Base\DBUtility\bin\Debug\DBUtility.pdb
+D:\App_Base\DBUtility\obj\Debug\ResolveAssemblyReference.cache
+D:\App_Base\DBUtility\obj\Debug\DBUtility.dll
+D:\App_Base\DBUtility\obj\Debug\DBUtility.pdb
+E:\开发资料\App_Base\DBUtility\bin\Debug\DBUtility.dll
+E:\开发资料\App_Base\DBUtility\bin\Debug\DBUtility.pdb
+E:\开发资料\App_Base\DBUtility\obj\Debug\ResolveAssemblyReference.cache
+E:\开发资料\App_Base\DBUtility\obj\Debug\DBUtility.dll
+E:\开发资料\App_Base\DBUtility\obj\Debug\DBUtility.pdb
+F:\likeming\自主开发\Ls_Eating\DBUtility\bin\Debug\DBUtility.dll
+F:\likeming\自主开发\Ls_Eating\DBUtility\bin\Debug\DBUtility.pdb
+F:\likeming\自主开发\Ls_Eating\DBUtility\obj\Debug\ResolveAssemblyReference.cache
+F:\likeming\自主开发\Ls_Eating\DBUtility\obj\Debug\DBUtility.dll
+F:\likeming\自主开发\Ls_Eating\DBUtility\obj\Debug\DBUtility.pdb
+E:\likeming\自主开发\Ls_Eating\DBUtility\bin\Debug\DBUtility.dll
+E:\likeming\自主开发\Ls_Eating\DBUtility\bin\Debug\DBUtility.pdb
+E:\likeming\自主开发\Ls_Eating\DBUtility\obj\Debug\ResolveAssemblyReference.cache
+E:\likeming\自主开发\Ls_Eating\DBUtility\obj\Debug\DBUtility.dll
+E:\likeming\自主开发\Ls_Eating\DBUtility\obj\Debug\DBUtility.pdb
+F:\Ls_Eating\DBUtility\bin\Debug\DBUtility.dll
+F:\Ls_Eating\DBUtility\bin\Debug\DBUtility.pdb
+F:\Ls_Eating\DBUtility\obj\Debug\ResolveAssemblyReference.cache
+F:\Ls_Eating\DBUtility\obj\Debug\DBUtility.dll
+F:\Ls_Eating\DBUtility\obj\Debug\DBUtility.pdb
+E:\Ls_Eating\DBUtility\bin\Debug\DBUtility.dll
+E:\Ls_Eating\DBUtility\bin\Debug\DBUtility.pdb
+E:\Ls_Eating\DBUtility\obj\Debug\ResolveAssemblyReference.cache
+E:\Ls_Eating\DBUtility\obj\Debug\DBUtility.dll
+E:\Ls_Eating\DBUtility\obj\Debug\DBUtility.pdb
+F:\教材开发\Winform_Perm\DBUtility\bin\Debug\DBUtility.dll
+F:\教材开发\Winform_Perm\DBUtility\bin\Debug\DBUtility.pdb
+F:\教材开发\Winform_Perm\DBUtility\obj\Debug\ResolveAssemblyReference.cache
+F:\教材开发\Winform_Perm\DBUtility\obj\Debug\DBUtility.dll
+F:\教材开发\Winform_Perm\DBUtility\obj\Debug\DBUtility.pdb
+K:\教材开发\Winform_Perm\DBUtility\bin\Debug\DBUtility.dll
+K:\教材开发\Winform_Perm\DBUtility\bin\Debug\DBUtility.pdb
+K:\教材开发\Winform_Perm\DBUtility\obj\Debug\ResolveAssemblyReference.cache
+K:\教材开发\Winform_Perm\DBUtility\obj\Debug\DBUtility.dll
+K:\教材开发\Winform_Perm\DBUtility\obj\Debug\DBUtility.pdb
+F:\教材开发\Perm_OOP\DBUtility\bin\Debug\DBUtility.dll
+F:\教材开发\Perm_OOP\DBUtility\bin\Debug\DBUtility.pdb
+F:\教材开发\Perm_OOP\DBUtility\obj\Debug\ResolveAssemblyReference.cache
+F:\教材开发\Perm_OOP\DBUtility\obj\Debug\DBUtility.dll
+F:\教材开发\Perm_OOP\DBUtility\obj\Debug\DBUtility.pdb
+K:\教材开发\Perm_OOP\DBUtility\bin\Debug\DBUtility.dll
+K:\教材开发\Perm_OOP\DBUtility\bin\Debug\DBUtility.pdb
+K:\教材开发\Perm_OOP\DBUtility\obj\Debug\ResolveAssemblyReference.cache
+K:\教材开发\Perm_OOP\DBUtility\obj\Debug\DBUtility.dll
+K:\教材开发\Perm_OOP\DBUtility\obj\Debug\DBUtility.pdb
+E:\S2\PermSys\DBUtility\bin\Debug\DBUtility.dll
+E:\S2\PermSys\DBUtility\bin\Debug\DBUtility.pdb
+E:\S2\PermSys\DBUtility\obj\Debug\DBUtility.dll
+E:\S2\PermSys\DBUtility\obj\Debug\DBUtility.pdb
+C:\Users\Administrator\Desktop\Perm_System\DBUtility\bin\Debug\DBUtility.dll
+C:\Users\Administrator\Desktop\Perm_System\DBUtility\bin\Debug\DBUtility.pdb
+C:\Users\Administrator\Desktop\Perm_System\DBUtility\obj\Debug\DBUtility.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\Perm_System\DBUtility\obj\Debug\DBUtility.dll
+C:\Users\Administrator\Desktop\Perm_System\DBUtility\obj\Debug\DBUtility.pdb
+C:\Users\Administrator.SD-20170609LVLA\Desktop\Perm_System\DBUtility\bin\Debug\DBUtility.dll
+C:\Users\Administrator.SD-20170609LVLA\Desktop\Perm_System\DBUtility\bin\Debug\DBUtility.pdb
+C:\Users\Administrator.SD-20170609LVLA\Desktop\Perm_System\DBUtility\obj\Debug\DBUtility.dll
+C:\Users\Administrator.SD-20170609LVLA\Desktop\Perm_System\DBUtility\obj\Debug\DBUtility.pdb
+C:\Users\Administrator.SD-20170609LVLA\Desktop\Perm_System\DBUtility\obj\Debug\DBUtility.csprojResolveAssemblyReference.cache
+G:\Perm_System\DBUtility\bin\Debug\DBUtility.dll
+G:\Perm_System\DBUtility\bin\Debug\DBUtility.pdb
+G:\Perm_System\DBUtility\obj\Debug\DBUtility.dll
+G:\Perm_System\DBUtility\obj\Debug\DBUtility.pdb
+C:\赖艺仁\药品管理系统\DBUtility\bin\Debug\DBUtility.dll
+C:\赖艺仁\药品管理系统\DBUtility\bin\Debug\DBUtility.pdb
+C:\赖艺仁\药品管理系统\DBUtility\obj\Debug\DBUtility.csprojResolveAssemblyReference.cache
+C:\赖艺仁\药品管理系统\DBUtility\obj\Debug\DBUtility.dll
+C:\赖艺仁\药品管理系统\DBUtility\obj\Debug\DBUtility.pdb
+C:\Users\残酷先生\Desktop\FilmSystem\DBUtility\bin\Debug\DBUtility.dll
+C:\Users\残酷先生\Desktop\FilmSystem\DBUtility\bin\Debug\DBUtility.pdb
+C:\Users\残酷先生\Desktop\FilmSystem\DBUtility\obj\Debug\DBUtility.dll
+C:\Users\残酷先生\Desktop\FilmSystem\DBUtility\obj\Debug\DBUtility.pdb
+C:\Users\残酷先生\Desktop\FilmSystem\DBUtility\obj\Debug\DBUtility.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\FilmSystem\DBUtility\bin\Debug\DBUtility.dll
+C:\Users\Administrator\Desktop\FilmSystem\DBUtility\bin\Debug\DBUtility.pdb
+C:\Users\Administrator\Desktop\FilmSystem\DBUtility\obj\Debug\DBUtility.dll
+C:\Users\Administrator\Desktop\FilmSystem\DBUtility\obj\Debug\DBUtility.pdb
+C:\Users\Administrator\Desktop\FilmSystem\DBUtility\obj\Debug\DBUtility.csprojResolveAssemblyReference.cache
+F:\桌面\FilmSystem\DBUtility\bin\Debug\DBUtility.dll
+F:\桌面\FilmSystem\DBUtility\bin\Debug\DBUtility.pdb
+F:\桌面\FilmSystem\DBUtility\obj\Debug\DBUtility.csprojResolveAssemblyReference.cache
+F:\桌面\FilmSystem\DBUtility\obj\Debug\DBUtility.dll
+F:\桌面\FilmSystem\DBUtility\obj\Debug\DBUtility.pdb
+F:\桌面\ASP.NET\第六章         GridView\FilmSystem\DBUtility\bin\Debug\DBUtility.dll
+F:\桌面\ASP.NET\第六章         GridView\FilmSystem\DBUtility\bin\Debug\DBUtility.pdb
+F:\桌面\ASP.NET\第六章         GridView\FilmSystem\DBUtility\obj\Debug\DBUtility.dll
+F:\桌面\ASP.NET\第六章         GridView\FilmSystem\DBUtility\obj\Debug\DBUtility.pdb
+F:\桌面\ASP.NET\第六章         GridView\FilmSystem\DBUtility\obj\Debug\DBUtility.csprojResolveAssemblyReference.cache
+E:\桌面\ASP.NET\第六章         GridView\FilmSystem\DBUtility\bin\Debug\DBUtility.dll
+E:\桌面\ASP.NET\第六章         GridView\FilmSystem\DBUtility\bin\Debug\DBUtility.pdb
+E:\桌面\ASP.NET\第六章         GridView\FilmSystem\DBUtility\obj\Debug\DBUtility.dll
+E:\桌面\ASP.NET\第六章         GridView\FilmSystem\DBUtility\obj\Debug\DBUtility.pdb
+E:\桌面\ASP.NET\第六章         GridView\FilmSystem\DBUtility\obj\Debug\DBUtility.csprojResolveAssemblyReference.cache
+E:\桌面\ASP.NET\FilmSystem\DBUtility\bin\Debug\DBUtility.dll
+E:\桌面\ASP.NET\FilmSystem\DBUtility\bin\Debug\DBUtility.pdb
+E:\桌面\ASP.NET\FilmSystem\DBUtility\obj\Debug\DBUtility.dll
+E:\桌面\ASP.NET\FilmSystem\DBUtility\obj\Debug\DBUtility.pdb
+E:\桌面\ASP.NET\FilmSystem\DBUtility\obj\Debug\DBUtility.csprojResolveAssemblyReference.cache
+F:\桌面\ASP.NET\FilmSystem\DBUtility\bin\Debug\DBUtility.dll
+F:\桌面\ASP.NET\FilmSystem\DBUtility\bin\Debug\DBUtility.pdb
+F:\桌面\ASP.NET\FilmSystem\DBUtility\obj\Debug\DBUtility.csprojResolveAssemblyReference.cache
+F:\桌面\ASP.NET\FilmSystem\DBUtility\obj\Debug\DBUtility.dll
+F:\桌面\ASP.NET\FilmSystem\DBUtility\obj\Debug\DBUtility.pdb
+D:\LYR\第二任老师\FilmSystem\DBUtility\bin\Debug\DBUtility.dll
+D:\LYR\第二任老师\FilmSystem\DBUtility\bin\Debug\DBUtility.pdb
+D:\LYR\第二任老师\FilmSystem\DBUtility\obj\Debug\DBUtility.dll
+D:\LYR\第二任老师\FilmSystem\DBUtility\obj\Debug\DBUtility.pdb
+D:\LYR\第二任老师\FilmSystem\DBUtility\obj\Debug\DBUtility.csprojResolveAssemblyReference.cache
+D:\LYR\第三任老师\赖艺仁-MyPhoneSys\MyPhoneSys\DBUtility\bin\Debug\DBUtility.dll
+D:\LYR\第三任老师\赖艺仁-MyPhoneSys\MyPhoneSys\DBUtility\bin\Debug\DBUtility.pdb
+D:\LYR\第三任老师\赖艺仁-MyPhoneSys\MyPhoneSys\DBUtility\obj\Debug\DBUtility.csproj.CoreCompileInputs.cache
+D:\LYR\第三任老师\赖艺仁-MyPhoneSys\MyPhoneSys\DBUtility\obj\Debug\DBUtility.dll
+D:\LYR\第三任老师\赖艺仁-MyPhoneSys\MyPhoneSys\DBUtility\obj\Debug\DBUtility.pdb
+D:\LYR\第三任老师\赖艺仁-MyPhoneSys\MyPhoneSys\DBUtility\obj\Debug\DBUtility.csprojResolveAssemblyReference.cache
+E:\LYR\第三任老师\赖艺仁-MyPhoneSys\MyPhoneSys\DBUtility\bin\Debug\DBUtility.dll
+E:\LYR\第三任老师\赖艺仁-MyPhoneSys\MyPhoneSys\DBUtility\bin\Debug\DBUtility.pdb
+E:\LYR\第三任老师\赖艺仁-MyPhoneSys\MyPhoneSys\DBUtility\obj\Debug\DBUtility.csprojResolveAssemblyReference.cache
+E:\LYR\第三任老师\赖艺仁-MyPhoneSys\MyPhoneSys\DBUtility\obj\Debug\DBUtility.csproj.CoreCompileInputs.cache
+E:\LYR\第三任老师\赖艺仁-MyPhoneSys\MyPhoneSys\DBUtility\obj\Debug\DBUtility.dll
+E:\LYR\第三任老师\赖艺仁-MyPhoneSys\MyPhoneSys\DBUtility\obj\Debug\DBUtility.pdb
+E:\LYR\第三任老师\lyr_MyPhoneSys\DBUtility\bin\Debug\DBUtility.dll
+E:\LYR\第三任老师\lyr_MyPhoneSys\DBUtility\bin\Debug\DBUtility.pdb
+E:\LYR\第三任老师\lyr_MyPhoneSys\DBUtility\obj\Debug\DBUtility.csproj.CoreCompileInputs.cache
+E:\LYR\第三任老师\lyr_MyPhoneSys\DBUtility\obj\Debug\DBUtility.dll
+E:\LYR\第三任老师\lyr_MyPhoneSys\DBUtility\obj\Debug\DBUtility.pdb

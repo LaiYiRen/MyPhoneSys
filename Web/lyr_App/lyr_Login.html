@@ -1,0 +1,94 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>欢迎来到您的到来！</title>
+    <link href="../CSS/lyr_Login.css" rel="stylesheet" />  <!--引入 lyr_user 样式表-->
+    <script src="../Scripts/jquery-3.2.1.js"></script>
+    <script src="../JS/lyr_Login.js"></script>
+</head>
+<body onkeydown="keyLogin()">
+    <!--头部-->
+    <div class="header">
+        <div class="container">
+            <!--头部Logo-->
+            <div class="header_lt clearFloat">
+                <i class="miLogo lf"></i>
+                <b class="lf">小米商城</b>
+                <b class="miUrl">mi.com</b>
+            </div>
+        </div>
+    </div>
+    <!--内容-->
+    <div class="content">
+        <div class="container">
+            <!--图像-->
+            <div class="content_middle">
+                <div class="content_Login">
+                    <!--头部-->
+                    <div class="content_top" >
+                        <ul>
+                            <li>帐号登录</li>
+                            <li>
+                                <label></label>
+                            </li>
+                            <li>扫码登录</li>
+                        </ul>
+                    </div>
+                    <!--中间-->
+                    <div class="content_zhongbu">
+                        <div class="content_zhongbu_user">
+                            <i class="login_user"></i>
+                            <input id="txtUserName" type="text" maxlength="20" placeholder="邮箱/手机号码/小米ID" />
+                        </div>
+                        <div class="content_zhongbu_pwd">
+                            <i class="login_pwd"></i>
+                            <input id="txtPwd" type="password" maxlength="20" placeholder="密码" />                           
+                        </div> 
+                        <span id="login_Msg" hidden="hidden" style="color:red;"><i></i></span>
+                        <button id="btnLogin" type="submit">登录</button>
+                        <div class="regist_and_pwd clearFloat">
+                            <ul class="content_list lf">
+                                <li><a href="lyr_Register.html">立即注册</a></li>
+                                <li>|</li>
+                                <li><a href="HtmlPage.html">忘记密码？</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!--底部-->
+                    <div class="content_footer">
+                        <div class="content_footer_middle">
+                            <span>
+                                <input type="text" disabled="disabled" />
+                                其他方式登陆
+                               <input type="text" disabled="disabled" />
+                            </span>
+                        </div>
+                        <div class="content_footer_logo">
+                            <a href="lyr_QQ_Login.html"><i class="content_footer_qq"></i></a>
+                            <a href="HtmlPage.html"><i class="content_footer_weibo"></i></a>
+                            <a href="HtmlPage.html"><i class="content_footer_zhifubao"></i></a>
+                            <a href="HtmlPage.html"><i class="content_footer_weixin"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--尾部-->
+    <div class="footer">
+        <div class="container">
+            <ul class="footer_list">
+                <li><a>简体</a></li>
+                <li>|</li>
+                <li><a>繁体</a></li>
+                <li>|</li>
+                <li><a>English</a></li>
+                <li>|</li>
+                <li><a>常见问题</a></li>
+            </ul>
+            <b>小米公司版权所有-京ICP备10046444-<a href="HtmlPage.html"><i class="police_logo"></i></a>京公网安备11010802020134号-京ICP证110507号</b>
+        </div>
+    </div>
+</body>
+</html>

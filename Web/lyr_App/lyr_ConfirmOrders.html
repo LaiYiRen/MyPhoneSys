@@ -1,0 +1,232 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script src="../Scripts/jquery-3.2.1.min.js"></script>
+    <script src="../JS/lyr_ConfirmOrders.js"></script>
+    <link href="../CSS/lyr_ConfirmOrders.css" rel="stylesheet" />
+    <link href="../Images/iconfont/iconfont.css" rel="stylesheet" />
+</head>
+<body>
+    <!-- 头部列表 -->
+    <div class="header">
+        <div class="container">
+            <div class="h_c_left">
+                <a class="logo" href="lyr_index.html"><i class="iconfont">&#xe661;</i></a>
+                <span class="meShopCart">确认订单</span>
+                <span class="message">
+                    <!--这里可以修改个人信息、修改密码、查看我的订单-->
+                </span>
+            </div>
+            <div class="h_c_right">
+                <ul class="ul_list">
+                    <li><a id="login">登陆</a><span>|</span></li>
+                    <li><a>退出</a><span>|</span></li>
+                    <li><a href="lyr_index.html">返回首页</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="h_hr"></div>
+    </div>
+    <!-- 我的订单 -->
+    <div class="MyOrders">
+        <div class="container">
+            <div class="MyOrder-container-top">
+                <span class="shouhuodizhi">收货地址</span><span class="querendingdan">订单概要</span>
+            </div>
+            <div class="MyOrder-container-middle">
+                <div class="middle-left">
+                    <!--<dl class="dl_list">
+                        <dt>赖艺仁</dt>
+                        <dd>13126032004</dd>
+                        <dd>广东省珠海市斗门区白蕉镇</dd>
+                        <dd>珠海市斗门区白蕉镇南方IT学院</dd>
+                        <dd>6532789</dd>
+                    </dl>-->
+                </div>
+                <div class="middle-right">
+                    <div class="middle-right-top">
+                        <span>确认收货地址</span><span>订单数量以及总计</span>
+                    </div>
+                    <div class="middle-right-middle">
+                        <ul class="ul_list left">
+                            <li>收货人姓名：</li>
+                            <li>赖艺仁</li>
+                            <li>手机号码：</li>
+                            <li>13126032004</li>
+                            <li>收货人地址：</li>
+                            <li>广东省珠海市斗门区白蕉镇</li>
+                            <li>地址详情：</li>
+                            <li class="dizhixiangqing">珠海市斗门区白蕉镇南方IT学院珠海市斗门区白蕉镇南方IT学院</li>
+                            <li>邮政编码：</li>
+                            <li>5452366</li>
+                        </ul>
+                    </div>
+                    <div class="middle-right-middle">
+                        <ul class="ul_list right">
+                            <li>商品件数：<span class="shopQuantity"></span>件</li>
+                            <li>金额合计：<span class="shopAmount"></span>元</li>
+                            <li>应付金额：<span class="shopAmount"></span>元</li>
+                            <li>
+                                <img src="../Images/确认订单/剁手党.jpg" /></li>
+                        </ul>
+                    </div>
+                    <div class="middle-right-bottom">
+                        <button class="ConfirmOrders" type="button">立即下单</button>
+                    </div>
+                </div>
+            </div>
+            <div class="MyOrder-container-bottom">
+                <ul class="ul_list bottom">
+                    <li><a href="lyr_index.html">返回首页</a><span>|</span></li>
+                    <li><a href="lyr_ShopCart.html">返回购物车</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- 小米底部 -->
+    <div class="footer">
+        <div class="container">
+            <div class="f_c_top">
+                <ul class="ul_list">
+                    <li>
+                        <a href="#"><i class="iconfont">&#xe601;</i>
+                            <span>预约维修服务</span>
+                        </a>
+                    </li>
+                    <li><a href="#">
+                        <i class="iconfont">&#xe609;</i>
+                        <span>7天无理由退货</span>
+                    </a>
+                    </li>
+                    <li><a href="#">
+                        <i class="iconfont">&#xe607;</i>
+                        <span>15天免费换货</span>
+                    </a>
+                    </li>
+                    <li><a href="#">
+                        <i class="iconfont">&#xe608;</i>
+                        <span>满150元包邮</span>
+                    </a>
+                    </li>
+                    <li><a href="#">
+                        <i class="iconfont">&#xe610;</i>
+                        <span>520余家售后网点</span>
+                    </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="f_hr"></div>
+            <div class="f_c_main">
+                <ul class="ul_list">
+                    <li>帮助中心</li>
+                    <li><a href="#">账户管理</a></li>
+                    <li><a href="#">购物指南</a></li>
+                    <li><a href="#">订单操作</a></li>
+                </ul>
+                <ul class="ul_list">
+                    <li>服务支持</li>
+                    <li><a href="#">售后政策</a></li>
+                    <li><a href="#">自助服务</a></li>
+                    <li><a href="#">相关下载</a></li>
+                </ul>
+                <ul class="ul_list">
+                    <li>线下门店</li>
+                    <li><a href="#">小米之家</a></li>
+                    <li><a href="#">购物指南</a></li>
+                    <li><a href="#">零售网点</a></li>
+                </ul>
+                <ul class="ul_list">
+                    <li>关于小米</li>
+                    <li><a href="#">了解小米</a></li>
+                    <li><a href="#">加入小米</a></li>
+                    <li><a href="#">联系我们</a></li>
+                </ul>
+                <ul class="ul_list">
+                    <li>关注我们</li>
+                    <li><a href="#">新浪微博</a></li>
+                    <li><a href="#">小米部落</a></li>
+                    <li><a href="#">官方微信</a></li>
+                </ul>
+                <ul class="ul_list">
+                    <li>特色服务</li>
+                    <li><a href="#">F 码通道</a></li>
+                    <li><a href="#">礼物码</a></li>
+                    <li><a href="#">防伪查询</a></li>
+                </ul>
+                <ul class="ul_list">
+                    <li>400-100-5678</li>
+                    <li>周一至周日 8:00-18:00</></li>
+                    <li>（仅收市话费）</li>
+                    <li><a href="#"><i class="iconfont">&#xe700;</i>24小时在线客服</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- 小米底部2 -->
+    <div class="footer2">
+        <div class="container">
+            <div class="f2_c_left">
+                <ul>
+                    <li><i class="iconfont">&#xe661;</i></li>
+                    <li><a href="#">小米商城</a><span>|</span></li>
+                    <li><a href="#">MIUI</a><span>|</span></li>
+                    <li><a href="#">米家</a><span>|</span></li>
+                    <li><a href="#">米聊</a><span>|</span></li>
+                    <li><a href="#">多看</a><span>|</span></li>
+                    <li><a href="#">路由器</a><span>|</span></li>
+                    <li><a href="#">米粉卡</a><span>|</span></li>
+                    <li><a href="#">小米天猫店</a><span>|</span></li>
+                    <li><a href="#">隐私政策</a><span>|</span></li>
+                    <li><a href="#">问题反馈</a><span>|</span></li>
+                    <li><a href="#">Select Region</a><span>|</span></li>
+                </ul>
+                <br />
+                <ul>
+                    <li><a href="#">©mi.com</a></li>
+                    <li>京ICP证110507号</li>
+                    <li><a href="#">京ICP备10046444号</a></li>
+                    <li><a href="#">京公网安备11010802020134号</a></li>
+                    <li><a href="#">京网文[2014]0059-0009号</a></li>
+                    <li>违法和不良信息举报电话：185-0130-1238，本网站所列数据，除特殊说明，所有数据均出自我司实验室测试</li>
+                </ul>
+            </div>
+            <div class="f2_c_right">
+                <ul>
+                    <li><a href="#">
+                        <img src="../Images/首页/底部/1-01.png" /></a>
+                    </li>
+                    <li><a href="#">
+                        <img src="../Images/首页/底部/1-02.png" /></a>
+                    </li>
+                    <li><a href="#">
+                        <img src="../Images/首页/底部/1-03.png" /></a>
+                    </li>
+                    <li><a href="#">
+                        <img src="../Images/首页/底部/1-04.png" /></a>
+                    </li>
+                    <li><a href="#">
+                        <img src="../Images/首页/底部/1-05.png" /></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="f2_c_bottom">
+                <h1>探索黑科技，小米为发烧而生!</h1>
+            </div>
+        </div>
+    </div>
+    <!-- footer脚本代码 -->
+    <script type="text/javascript">
+        $(function () {
+            $(".footer .container .f_c_top .ul_list li a").hover(function () {
+                $(this).children("i").css("color", "#ff6720");
+                $(this).children("span").css("color", "#ff6720");
+            }, function () {
+                $(this).children("i").css("color", "#666");
+                $(this).children("span").css("color", "#666");
+            })
+        });
+    </script>
+</body>
+</html>

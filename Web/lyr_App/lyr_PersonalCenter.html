@@ -1,0 +1,316 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script src="../Scripts/jquery-3.2.1.min.js"></script>
+    <script src="../JS/lyr_PersonalCenter.js"></script>
+    <link href="../CSS/lyr_PersonalCenter.css" rel="stylesheet" />
+    <link href="../Images/iconfont/iconfont.css" rel="stylesheet" />
+</head>
+<body>
+    <!-- 头部列表 -->
+    <div class="header">
+        <div class="container">
+            <div class="h_c_left">
+                <a class="logo"><i class="iconfont">&#xe661;</i></a>
+                <span class="meShopCart">个人中心</span>
+                <span class="message">这里可以修改个人信息、修改密码、查看我的订单</span>
+            </div>
+            <div class="h_c_right">
+                <ul class="ul_list">
+                    <li><a id="login">登陆</a><span>|</span></li>
+                    <li><a>退出</a><span>|</span></li>
+                    <li><a href="lyr_index - 复制.html">返回首页</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="h_hr"></div>
+    </div>
+    <!-- 我的导航栏 -->
+    <div class="nav">
+        <div class="container">
+            <div class="nav-container-top">
+                <ul class="ul_list">
+                    <li class="wodeziliaoStart">我的资料</li>
+                    <li class="wodedingdanStart">我的订单</li>
+                    <li class="wodeshouhuodizhiStart">我的收货地址</li>
+                    <li class="genggaimimaStart">更改密码</li>
+                </ul>
+            </div>
+            <div class="nav-container-middle">
+                <div class="wodeziliao" style="display: block;">
+                    <!--<ul class="ul_list">
+                         <li>姓名：<span>小赖</span></li>
+                         <li>电话：<span>13126032004</span></li>
+                         <li>邮箱：<span>2445881204@qq.com</span></li>
+                         <li>性别：<span>男</span></li>
+                         <li>生日：<span>1997-03-07</span></li>
+                         <li>QQ：<span>2445881204</span></li>
+                         <li>微信：<span>LYR3028</span></li>
+                         <li>身份证：<span>440921199703076532</span></li>
+                         <li>家庭住址：<span>广东省茂名市信宜市合水镇</span></li>
+                         <li>注册时间：<span>2017-06-01</span></li>
+                     </ul>-->
+                </div>
+                <div class="wodedingdan">
+                    <div class="wodedingdan-left">
+                        <ul class="ul_list clearFloat">
+                            <li>全部</li>
+                            <li>待付款</li>
+                            <li>待收货</li>
+                            <li>待评价</li>
+                        </ul>
+                    </div>
+                    <div id="wodedingdan-right" class="wodedingdan-right" style="display: block;">
+                        <!--<div class="order-item">
+                            <div class="order-title">
+                                <h3>2017-01-01</h3>
+                            </div>
+                            <div class="order-content">
+                                <ul class="ul_list clearFloat">
+                                    <li>外观</li>
+                                    <li>名称</li>
+                                    <li>数量</li>
+                                    <li>小计</li>
+                                </ul>
+                                <ul class="ul_list clearFloat">
+                                    <li class="img">
+                                        <img src="../Images/首页/nav_子菜单/小米手机/01.png" /></li>
+                                    <li>小米Mix2手机</li>
+                                    <li>100</li>
+                                    <li class="price">￥8888元</li>
+                                </ul>
+                            </div>
+                            <div class="order-operate"><span>总价:<span>￥88888元</span></span> </div>
+                        </div>-->
+                    </div>
+                    <div class="wodedingdan-right">
+                        2
+                    </div>
+                    <div class="wodedingdan-right">
+                        3
+                    </div>
+                    <div class="wodedingdan-right">
+                        4
+                    </div>
+                </div>
+                <div class="wodeshouhuodizhi">
+                    我的收货地址
+                    爱的一种解释爱是什么？一个精灵坐在碧绿的枝叶间沉思。风儿若有若无。一只鸟儿飞过来，停在枝上，望着远处将要成熟的稻田。精灵取出一束黄澄澄的稻谷问道：“你爱这稻谷吗？”“爱。”“为什么？”
+                </div>
+                <div class="genggaimima">
+                    更改密码
+                    爱的一种解释爱是什么？一个精灵坐在碧绿的枝叶间沉思。风儿若有若无。一只鸟儿飞过来，停在枝上，望着远处将要成熟的稻田。精灵取出一束黄澄澄的稻谷问道：“你爱这稻谷吗？”“爱。”“为什么？”
+                </div>
+            </div>
+            <div class="nav-container-bottom">
+                <ul class="ul_list">
+                    <li><a href="lyr_index.html">返回首页</a><span>|</span></li>
+                    <li><a href="lyr_ShopCart.html">返回购物车</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- 我的导航栏JavaScripts -->
+    <script type="text/javascript">
+        loadOne(); loadTwo();
+        function loadOne() {
+            $(function () {
+                //获取对象
+                var li = $(".nav-container-top ul li");
+                var div = $(".nav-container-middle>div");
+                //初始化标记
+                li.prop("flag", "0");
+                li.eq(0).prop("flag", "1").css("background-color", "red");
+                //单击事件
+                li.click(function () {
+                    //显示子菜单
+                    div.eq($(this).index()).show().siblings().hide();
+                    //更改背景颜色
+                    $(this).css("background-color", "red").siblings("li").css("background-color", "#ff6700");
+                    //做标记
+                    $(this).prop("flag", "1").siblings("li").prop("flag", "0");
+                });
+                li.hover(function () {
+                    //更改背景颜色
+                    $(this).css("background-color", "red");
+                }, function () {
+                    if (parseInt($(this).prop("flag")) == 0) {
+                        //更改背景颜色
+                        $(this).css("background-color", "#ff6700");
+                    }
+                });
+            });
+        }
+        function loadTwo() {
+            $(function () {
+                //获取对象
+                var li = $(".wodedingdan-left ul li");
+                var div = $(".wodedingdan-right");
+                //初始化标记
+                li.prop("flag", "0");
+                li.eq(0).prop("flag", "1").css("background-color", "#ef4d5c");
+                //单击事件
+                li.click(function () {
+                    //显示子菜单
+                    div.eq($(this).index()).show().siblings(".wodedingdan-right").hide();
+                    //更改背景颜色
+                    $(this).css("background-color", "#ef4d5c").siblings("li").css("background-color", "#47aecf");
+                    //做标记
+                    $(this).prop("flag", "1").siblings("li").prop("flag", "0");
+                });
+                li.hover(function () {
+                    //更改背景颜色
+                    $(this).css("background-color", "#ef4d5c");
+                }, function () {
+                    if (parseInt($(this).prop("flag")) == 0) {
+                        //更改背景颜色
+                        $(this).css("background-color", "#47aecf");
+                    }
+                });
+            });
+        }
+    </script>
+    <!-- 小米底部 -->
+    <div class="footer">
+        <div class="container">
+            <div class="f_c_top">
+                <ul class="ul_list">
+                    <li>
+                        <a href="#"><i class="iconfont">&#xe601;</i>
+                            <span>预约维修服务</span>
+                        </a>
+                    </li>
+                    <li><a href="#">
+                        <i class="iconfont">&#xe609;</i>
+                        <span>7天无理由退货</span>
+                    </a>
+                    </li>
+                    <li><a href="#">
+                        <i class="iconfont">&#xe607;</i>
+                        <span>15天免费换货</span>
+                    </a>
+                    </li>
+                    <li><a href="#">
+                        <i class="iconfont">&#xe608;</i>
+                        <span>满150元包邮</span>
+                    </a>
+                    </li>
+                    <li><a href="#">
+                        <i class="iconfont">&#xe610;</i>
+                        <span>520余家售后网点</span>
+                    </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="f_hr"></div>
+            <div class="f_c_main">
+                <ul class="ul_list">
+                    <li>帮助中心</li>
+                    <li><a href="#">账户管理</a></li>
+                    <li><a href="#">购物指南</a></li>
+                    <li><a href="#">订单操作</a></li>
+                </ul>
+                <ul class="ul_list">
+                    <li>服务支持</li>
+                    <li><a href="#">售后政策</a></li>
+                    <li><a href="#">自助服务</a></li>
+                    <li><a href="#">相关下载</a></li>
+                </ul>
+                <ul class="ul_list">
+                    <li>线下门店</li>
+                    <li><a href="#">小米之家</a></li>
+                    <li><a href="#">购物指南</a></li>
+                    <li><a href="#">零售网点</a></li>
+                </ul>
+                <ul class="ul_list">
+                    <li>关于小米</li>
+                    <li><a href="#">了解小米</a></li>
+                    <li><a href="#">加入小米</a></li>
+                    <li><a href="#">联系我们</a></li>
+                </ul>
+                <ul class="ul_list">
+                    <li>关注我们</li>
+                    <li><a href="#">新浪微博</a></li>
+                    <li><a href="#">小米部落</a></li>
+                    <li><a href="#">官方微信</a></li>
+                </ul>
+                <ul class="ul_list">
+                    <li>特色服务</li>
+                    <li><a href="#">F 码通道</a></li>
+                    <li><a href="#">礼物码</a></li>
+                    <li><a href="#">防伪查询</a></li>
+                </ul>
+                <ul class="ul_list">
+                    <li>400-100-5678</li>
+                    <li>周一至周日 8:00-18:00</></li>
+                    <li>（仅收市话费）</li>
+                    <li><a href="#"><i class="iconfont">&#xe700;</i>24小时在线客服</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- 小米底部2 -->
+    <div class="footer2">
+        <div class="container">
+            <div class="f2_c_left">
+                <ul>
+                    <li><i class="iconfont">&#xe661;</i></li>
+                    <li><a href="#">小米商城</a><span>|</span></li>
+                    <li><a href="#">MIUI</a><span>|</span></li>
+                    <li><a href="#">米家</a><span>|</span></li>
+                    <li><a href="#">米聊</a><span>|</span></li>
+                    <li><a href="#">多看</a><span>|</span></li>
+                    <li><a href="#">路由器</a><span>|</span></li>
+                    <li><a href="#">米粉卡</a><span>|</span></li>
+                    <li><a href="#">小米天猫店</a><span>|</span></li>
+                    <li><a href="#">隐私政策</a><span>|</span></li>
+                    <li><a href="#">问题反馈</a><span>|</span></li>
+                    <li><a href="#">Select Region</a><span>|</span></li>
+                </ul>
+                <br />
+                <ul>
+                    <li><a href="#">©mi.com</a></li>
+                    <li>京ICP证110507号</li>
+                    <li><a href="#">京ICP备10046444号</a></li>
+                    <li><a href="#">京公网安备11010802020134号</a></li>
+                    <li><a href="#">京网文[2014]0059-0009号</a></li>
+                    <li>违法和不良信息举报电话：185-0130-1238，本网站所列数据，除特殊说明，所有数据均出自我司实验室测试</li>
+                </ul>
+            </div>
+            <div class="f2_c_right">
+                <ul>
+                    <li><a href="#">
+                        <img src="../Images/首页/底部/1-01.png" /></a>
+                    </li>
+                    <li><a href="#">
+                        <img src="../Images/首页/底部/1-02.png" /></a>
+                    </li>
+                    <li><a href="#">
+                        <img src="../Images/首页/底部/1-03.png" /></a>
+                    </li>
+                    <li><a href="#">
+                        <img src="../Images/首页/底部/1-04.png" /></a>
+                    </li>
+                    <li><a href="#">
+                        <img src="../Images/首页/底部/1-05.png" /></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- footer脚本代码 -->
+    <script type="text/javascript">
+        $(function () {
+            $(".footer .container .f_c_top .ul_list li a").hover(function () {
+                $(this).children("i").css("color", "#ff6720");
+                $(this).children("span").css("color", "#ff6720");
+            }, function () {
+                $(this).children("i").css("color", "#666");
+                $(this).children("span").css("color", "#666");
+            })
+        });
+    </script>
+</body>
+</html>

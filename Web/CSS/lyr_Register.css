@@ -1,0 +1,179 @@
+﻿/*公共样式*/
+* {
+    margin: 0;
+    padding: 0; /*设置外边距和内边距为零，有需要自己另外加*/
+}
+
+body {
+    color: #333; /*设置整体字体颜色一般网页用：333、666、999*/
+    font: 12px "Microsfot YaHei"; /*网页字体一般用12号字体*/
+    background-color: #F9F9F9;
+}
+
+a {
+    color: #333; /*设置字体颜色*/
+    text-decoration: none; /*取消 a 元素自带下划线*/
+}
+
+    a:hover {
+        color: #E4393C; /*设置字体颜色*/
+        text-decoration: underline; /*恢复 a 元素自带下划线*/
+        cursor: pointer; /*设置鼠标手势*/
+    }
+
+ul {
+    list-style: none; /*取消 ul 列表自带的样式*/
+}
+
+i, b {
+    /* i,b 是行内元素 好处是：它可以跟其它元素在一行显示*/
+    display: inline-block; /*插入背景图要高度和宽度所以设置为行内块*/
+    vertical-align: middle; /*左边图标跟右边文本一起在一条水平线上*/
+}
+
+i {
+    background: url(); /*提前设置照片，用的时候根据所需的图标位置挪动*/
+}
+
+input, button {
+    outline: none; /*去除元素轮廓*/
+}
+
+.container {
+    width: 1345px; /*设置网页宽度*/
+    margin: auto; /*让元素块居中*/
+}
+
+.clearFloat:after { /*清除子元素浮动对父元素的影响*/
+    content: ""; /*内容为空*/
+    display: block; /*让它显示为块*/
+    clear: both; /**/
+}
+
+.lf {
+    float: left; /*左边浮动*/
+}
+
+.rf {
+    float: right; /*右边浮动*/
+}
+/*内容*/
+.content_middle {
+    position: relative; /*相对定位*/
+    width: 850px;
+    height: 500px;
+    margin: 20px auto;
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+}
+
+    .content_middle > .con_top {
+        position: relative;
+        flex: 2;
+    }
+
+    .content_middle > .con_middle {
+        position: relative;
+        flex: 6;
+    }
+
+    .content_middle > .con_footer {
+        position: relative;
+        flex: 1;
+        background-color: royalblue;
+    }
+
+    .content_middle > .con_top > .milogo {
+        position: absolute;
+        top:34px;
+        left: 365px;
+        width: 120px;
+        height: 90px;
+        background-repeat: no-repeat;
+        background-image: url('../Images/首页/注册/MiLogo.png');
+        background-size: 120px 90px;
+    }
+
+.con_middle > h1 {
+    margin-top: 15px;
+    margin-left: 350px;
+    margin-bottom: 18px;
+}
+.con_middle >span {
+    margin-left:220px;
+    margin-right:300px;
+    font-size:20px;
+}
+    .con_middle > span:nth-child(4){
+        margin-left: 180px;
+    }
+    .con_middle > span > input {
+        width: 263px;
+        height: 38px;
+        font-size: 15px;
+        padding-left: 8px;
+        padding-right: 8px;
+        margin-left: 10px;
+        margin-right: 20px;
+        margin-bottom: 10px;
+        border: 1px solid #E0E0E0;
+    }
+.con_middle > .register {
+    color:#FFFFFF;
+    font-size:18px;
+    width: 281.9px;
+    height: 38.9px;
+    border:none;
+    margin-top:10px;
+    margin-left:290px;
+    background-color:#ff6a00;
+}
+.con_middle > #login_Msg > i { /*登陆提示图标*/
+    width: 18px;
+    height: 18px;
+    margin-left:76px;
+    background: url('../Images/首页/注册/mssage.png') no-repeat;
+    background-size: 18px 18px;
+}
+/*尾部样式*/
+.footer_list {
+    margin-left: 40%;
+}
+
+    .footer_list > li {
+        font-size: 14px;
+        float: left;
+        color: #757575;
+    }
+
+        .footer_list > li:nth-child(2n) {
+            font-size: 10px;
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+
+        .footer_list > li > a:hover {
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+.footer > .container > b {
+    float: left;
+    font-size: 15px;
+    margin-top: 10px;
+    margin-left: 350px;
+    margin-bottom: 28px;
+}
+
+    .footer > .container > b > a > .police_logo {
+        width: 20px;
+        height: 20px;
+        background: url('../Images/用户登录/police_logo.png') no-repeat;
+        background-size: 20px;
+        margin-top: -8px;
+    }
+
+    .footer > .container > b > a:hover {
+        cursor: pointer;
+    }

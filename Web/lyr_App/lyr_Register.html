@@ -1,0 +1,131 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>小米账号-注册</title>
+    <link href="../CSS/lyr_Register.css" rel="stylesheet" />
+    <script src="../Scripts/jquery-3.2.1.js"></script>
+    <script src="../JS/lyr_Register.js"></script>
+</head>
+<body>
+    <!--内容-->
+    <div class="content">
+        <div class="container">
+            <div class="content_middle">
+                <div class="con_top">
+                    <i class="milogo"></i>
+                </div>
+                <div class="con_middle">
+                    <h1>注册小米账号</h1>
+                    <span>账号：<input id="txtUserName" type="text" placeholder="邮箱/手机号/小米ID" maxlength="16" /></span>
+                    <span>密码：<input id="txtPwd" type="password" placeholder="请输入密码" maxlength="16" /></span>
+                    <span>确认密码：<input id="txtPwd2" type="password" placeholder="请输入确认密码" maxlength="16" /></span>
+                    <span id="login_Msg" hidden="hidden" style="color: red; font-size: 12px;"><i></i></span>
+                    <input id="register" class="register" type="button" value="立即注册" />
+                    <script>
+                            var txtUserName = document.getElementById("txtUserName");
+                            var txtPwd = document.getElementById("txtPwd");
+                            var txtPwd2 = document.getElementById("txtPwd2");
+                        
+                            //账号名
+                            txtUserName.onfocus = function () { 
+                                txtUserName.style.border = "1px solid #FF6700";
+                            };
+                            txtUserName.onblur = function () {
+                                txtUserName.style.border = "1px solid #E0E0E0";
+                            };
+                             //密码
+                            txtPwd.onfocus = function () { 
+                                txtPwd.style.border = "1px solid #FF6700";
+                            };
+                            txtPwd.onblur = function () {
+                                txtPwd.style.border = "1px solid #E0E0E0";
+                            };
+
+                             //确认密码
+                            txtPwd2.onfocus = function () { 
+                                txtPwd2.style.border = "1px solid #FF6700";
+                            };
+                            txtPwd2.onblur = function () {
+                                txtPwd2.style.border = "1px solid #E0E0E0";
+                            };
+
+                            /*账号名鼠标指针进入*/
+                            txtUserName.onmousemove = function () {
+                                var myInput = document.getElementById('txtUserName');
+                                if (myInput == document.activeElement) {
+
+                                } else {
+                                    /*没有焦点产生此效果*/
+                                    txtUserName.style.border = "1px solid #B0B0B0";
+                                }                      
+                            };
+                            /*账号名鼠标指针离开*/
+                            txtUserName.onmouseout = function () {
+                                var myInput = document.getElementById('txtUserName');
+                                if (myInput == document.activeElement) {
+
+                                } else {
+                                    txtUserName.style.border = "1px solid  #E0E0E0";
+                                }
+                            };
+                             /*密码鼠标指针进入*/
+                            txtPwd.onmousemove = function () {
+                                var myInput = document.getElementById('txtPwd');
+                                if (myInput == document.activeElement) {
+
+                                } else {
+                                    /*没有焦点产生此效果*/
+                                    txtPwd.style.border = "1px solid #B0B0B0";
+                                }                     
+                            };
+                            /*密码鼠标指针离开*/
+                            txtPwd.onmouseout = function () {
+                                var myInput = document.getElementById('txtPwd');
+                                if (myInput == document.activeElement) {
+
+                                } else {
+                                    txtPwd.style.border = "1px solid  #E0E0E0";
+                                }
+                            };
+                            /*密码2鼠标指针进入*/
+                            txtPwd2.onmousemove = function () {
+                                var myInput = document.getElementById('txtPwd2');
+                                if (myInput == document.activeElement) {
+
+                                } else {
+                                    /*没有焦点产生此效果*/
+                                    txtPwd2.style.border = "1px solid #B0B0B0";
+                                }                    
+                            };
+                            /*密码2鼠标指针离开*/
+                            txtPwd2.onmouseout = function () {
+                                var myInput = document.getElementById('txtPwd2');
+                                if (myInput == document.activeElement) {
+
+                                } else {
+                                    txtPwd2.style.border = "1px solid  #E0E0E0";
+                                }
+                            };
+                    </script>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--尾部-->
+    <div class="footer">
+        <div class="container">
+            <ul class="footer_list">
+                <li><a>简体</a></li>
+                <li>|</li>
+                <li><a>繁体</a></li>
+                <li>|</li>
+                <li><a>English</a></li>
+                <li>|</li>
+                <li><a>常见问题</a></li>
+            </ul>
+            <b>小米公司版权所有-京ICP备10046444-<a href="HtmlPage.html"><i class="police_logo"></i></a>京公网安备11010802020134号-京ICP证110507号</b>
+        </div>
+    </div>
+</body>
+</html>
